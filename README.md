@@ -7,6 +7,8 @@ We could choose 1 project from among 4 topics:
  3) Creating a protected file system with granular per-user permissions/access control
  4) Adversarial machine learning - creating a platform for attack and defense
 
+Since knowledge and experience with fuzzing is of great utility and practical value, and AFL is well understood, the fuzzing project was chosen.
+
 # AFL
 
 Project Description (taken from professor's slides):
