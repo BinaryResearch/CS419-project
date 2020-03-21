@@ -1,7 +1,7 @@
 # CS419-project
 CS419 Computer Security class project. Improve AFL performance with respect to baseline.
 
-We had the option of choosing 1 project from among 4 topics:
+We could choose 1 project from among 4 topics:
  1) Creating a cryptography platform that allow users/attackers to encrypt and decrypt messages, supports multiple modes, etc.
  2) Improving AFL performance in some way
  3) Creating a protected file system with granular per-user permissions/access control
