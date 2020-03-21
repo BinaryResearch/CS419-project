@@ -23,7 +23,7 @@ At minimum:
  
 Requirements:
  - You can re-use tools like KLEE (for symbolic execution) etc
- - You cannot re-use existing fuzzerslike Driller
+ - You cannot re-use existing fuzzers like Driller
  - How to evaluate fuzz testing?
    - https://www.cs.umd.edu/~mwh/papers/fuzzeval.pdf
  
