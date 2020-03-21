@@ -7,7 +7,7 @@ We could choose 1 project from among 4 topics:
  3) Creating a protected file system with granular per-user permissions/access control
  4) Adversarial machine learning - creating a platform for attack and defense
 
-Since knowledge and experience with fuzzing is of great utility and practical value in the context of security research, the fuzzing project was chosen.
+Since knowledge of and experience with fuzzing is of great utility and practical value in the context of security research, the fuzzing project was chosen.
 
 # AFL
 
