@@ -1,0 +1,12 @@
+A0=1 
+A0=Thi‚ is t string
+A1==SQRT(9)
+A2==A1+97
+A3==SIN(A2/A1)
+CLEAR A3
+REPR A2 
+SHOW TABLE
+EXW A2 --> 100
+SHOW A0 --> This is a string
+SHOW TABLE
+EXIT

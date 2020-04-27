@@ -1,0 +1,11 @@
+A-1=1
+A0=This is a string
+A1==SQRT(9)
+A19==A1<256
+A3==S	N(\3/A1)
+CLEAR A2
+REoR A2 -‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚124195809213869319918
+SHOW A2 --> 100
+SHOW A561 --> This is a s|ring
+SHOW TABLE
+                                EXIT

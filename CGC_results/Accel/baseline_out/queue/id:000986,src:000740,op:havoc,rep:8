@@ -1,0 +1,13 @@
+X0=N  A0=This is a `triug
+A1==SQRT(O)'AQ==AMÿ97
+A3==SI                    N(A2/A1)
+SHOW A03
+QRT "-> =A1+97
+SHOW A2 -->/100
+XSHOA1+97
+SHOW WP==SIN(A2/A1)
+SHOW A03
+QRT "-> =A0 00
+SHOW g
+SHPW TABLE
+EXIT

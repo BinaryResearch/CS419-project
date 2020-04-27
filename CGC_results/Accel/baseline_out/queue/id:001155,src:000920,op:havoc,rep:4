@@ -1,0 +1,11 @@
+A0=1 
+A0=Thi           QRT              s is a `triug
+A1==                             SQRT(9)
+A2==A1+97
+A3==SIN(A2,A12,A1)
+SHOW )
+SHOW A03
+REPR ;2 --> =A1+97
+SHOW A2 1)
+SHOW A03
+REPR ;29333333XIT

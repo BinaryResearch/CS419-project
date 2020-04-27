@@ -1,0 +1,9 @@
+list ..
+create test.txs
+create test.txt
+open test.
+create test.txt
+create test.txt
+ope testope test.txt
+opdn FikeSys
+

@@ -1,0 +1,10 @@
+A0=1 
+M0=This ás a string+97A3==SIN(A2/\1)
+CLEAR A3
+REPR A2 --> =A1+97
+SHOW A2 --> 1@0
+SHOW A0 --OW A0 --> This is a string
+SHOW TABLE
+g
+SHOW TABLE
+EXIEXIT

@@ -1,0 +1,7 @@
+A0=-.
+50=This i
+S0=-.
+A0=This i
+SHOW A0 --> HOW A0 --> This is a string
+SHOW TABLE
+EXIT

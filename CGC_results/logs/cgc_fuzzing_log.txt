@@ -1,0 +1,186 @@
+fuzzing the CGC binaries
+
+Can't fuzz CGC binaries on iLab machines without using LD_PRELOAD to load libcgc.so and libtiny-AES128-C.so:
+
+$ ~/fuzzing/AFL/afl-fuzz -i baseline_in/ -o baseline_out/ -- ./Accel
+afl-fuzz 2.56b by <lcamtuf@google.com>
+[+] You have 80 CPU cores and 6 runnable tasks (utilization: 8%).
+[+] Try parallel jobs - see docs/parallel_fuzzing.txt.
+[*] Checking CPU core loadout...
+[+] Found a free CPU core, binding to #0.
+[*] Checking core_pattern...
+[*] Checking CPU scaling governor...
+[*] Setting up output directories...
+[+] Output directory exists but deemed OK to reuse.
+[*] Deleting old session data...
+[+] Output dir cleanup successful.
+[*] Scanning 'baseline_in/'...
+[+] No auto-generated dictionary tokens to reuse.
+[*] Creating hard links for all input files...
+[*] Validating target binary...
+[*] Attempting dry run with 'id:000000,orig:seed.txt'...
+[*] Spinning up the fork server...
+
+[-] Hmm, looks like the target binary terminated before we could complete a
+    handshake with the injected code. There are two probable explanations:
+
+    - The current memory limit (50.0 MB) is too restrictive, causing an OOM
+      fault in the dynamic linker. This can be fixed with the -m option. A
+      simple way to confirm the diagnosis may be:
+
+      ( ulimit -Sv $[49 << 10]; /path/to/fuzzed_app )
+
+      Tip: you can use http://jwilk.net/software/recidivm to quickly
+      estimate the required amount of virtual memory for the binary.
+
+    - Less likely, there is a horrible bug in the fuzzer. If other options
+      fail, poke <lcamtuf@coredump.cx> for troubleshooting tips.
+
+[-] PROGRAM ABORT : Fork server handshake failed
+         Location : init_forkserver(), afl-fuzz.c:2265
+
+
+
+
+
+$ timeout --signal=2 24h LD_PRELOAD="../libcgc.so ../libtiny-AES128-C.so" ~/fuzzing/AFL/afl-fuzz -i baseline_in/ -o baseline_out/ -- ./Accel
+timeout: failed to run command ‘LD_PRELOAD=../libcgc.so ../libtiny-AES128-C.so’: No such file or directory
+$ LD_PRELOAD="../libcgc.so ../libtiny-AES128-C.so" ~/fuzzing/AFL/afl-fuzz -i baseline_in/ -o baseline_out/ -- ./Accel
+ERROR: ld.so: object '../libcgc.so' from LD_PRELOAD cannot be preloaded: ignored.
+ERROR: ld.so: object '../libtiny-AES128-C.so' from LD_PRELOAD cannot be preloaded: ignored.
+afl-fuzz 2.56b by <lcamtuf@google.com>
+[+] You have 80 CPU cores and 10 runnable tasks (utilization: 12%).
+[+] Try parallel jobs - see docs/parallel_fuzzing.txt.
+[*] Checking CPU core loadout...
+[+] Found a free CPU core, binding to #0.
+[*] Checking core_pattern...
+[*] Checking CPU scaling governor...
+[*] Setting up output directories...
+[*] Scanning 'baseline_in/'...
+[+] No auto-generated dictionary tokens to reuse.
+[*] Creating hard links for all input files...
+[*] Validating target binary...
+[*] Attempting dry run with 'id:000000,orig:seed.txt'...
+[*] Spinning up the fork server...
+[+] All right - fork server is up.
+    len = 152, map size = 547, exec speed = 5386 us
+[+] All test cases processed.
+
+[+] Here are some useful stats:
+
+    Test case count : 1 favored, 0 variable, 1 total
+       Bitmap range : 547 to 547 bits (average: 547.00 bits)
+        Exec timing : 5386 to 5386 us (average: 5386 us)
+
+[*] No -t option specified, so I'll use exec timeout of 40 ms.
+[+] All set and ready to roll!
+
+
+                        american fuzzy lop 2.56b (Accel)
+
+┌─ process timing ─────────────────────────────────────┬─ overall results ─────┐
+│        run time : 0 days, 0 hrs, 1 min, 51 sec       │  cycles done : 0      │
+│   last new path : 0 days, 0 hrs, 0 min, 15 sec       │  total paths : 99     │
+│ last uniq crash : none seen yet                      │ uniq crashes : 0      │
+│  last uniq hang : none seen yet                      │   uniq hangs : 0      │
+├─ cycle progress ────────────────────┬─ map coverage ─┴───────────────────────┤
+│  now processing : 0 (0.00%)         │    map density : 0.83% / 1.74%         │
+│ paths timed out : 0 (0.00%)         │ count coverage : 1.64 bits/tuple       │
+├─ stage progress ────────────────────┼─ findings in depth ────────────────────┤
+│  now trying : interest 32/8         │ favored paths : 1 (1.01%)              │
+│ stage execs : 4683/6443 (72.68%)    │  new edges on : 53 (53.54%)            │
+│ total execs : 21.7k                 │ total crashes : 0 (0 unique)           │
+│  exec speed : 198.8/sec             │  total tmouts : 0 (0 unique)           │
+├─ fuzzing strategy yields ───────────┴───────────────┬─ path geometry ────────┤
+│   bit flips : 59/1216, 5/1215, 3/1213               │    levels : 2          │
+│  byte flips : 0/152, 0/130, 1/134                   │   pending : 99         │
+│ arithmetics : 18/7124, 0/597, 0/0                   │  pend fav : 1          │
+│  known ints : 5/718, 5/3613, 0/0                    │ own finds : 98         │
+│  dictionary : 0/0, 0/0, 0/0                         │  imported : n/a        │
+│       havoc : 0/0, 0/0                              │ stability : 100.00%    │
+│        trim : 0.00%/64, 15.79%                      ├────────────────────────┘
+^C────────────────────────────────────────────────────┘          [cpu000: 53%]
+
+
+However, 'screen' or 'timeout' can't be used due to the LD_PRELOAD error, so I have to have a terminal open for each session.
+
+$ LD_PRELOAD="../libcgc.so ../libtiny-AES128-C.so" screen ~/fuzzing/AFL/afl-fuzz -i baseline_in/ -o baseline_out/ -- ./Accel
+[screen is terminating]
+$ screen LD_PRELOAD="../libcgc.so ../libtiny-AES128-C.so" ~/fuzzing/AFL/afl-fuzz -i baseline_in/ -o baseline_out/ -- ./Accel
+[screen is terminating]
+
+
+* = corpus generation doesn't work - all test cases have same traces
+1st batch: 
+started: April 19 19:50
+
+baseline run
+====================
+Accel
+BitBlaster
+BloomySunday
+Board_Game
+BudgIT *
+CableGrindLlama *
+CGC_Board
+CGC_Symbol_Viewer *
+Character_Statistics
+CNMP *
+
+Final Run
+=====================
+started: April 20 19:45
+CGC_Symbol_Viewer 21:07 - used the wrong seed file, had to interrupt to fix
+Bloomy_Sunday killed by admin at 23:13 - 3hr 25 minutes, 6 unique crashes. Restarted 23:18
+
+Accel
+Bit_Blaster
+Bloomy_Sunday
+Board_Game
+BudgeIT                 all killed prematurely by admin
+CGC_Board               all restarted 04/21 10:40
+CGC_Symbol_Viewer_CSV
+CableGrindLlama
+Character_Statistics
+CNMP
+
+Bit_Blaster - killed by admin 4/21 14:13 after 18hr 16min. 
+Bloomy_Sunday - terminated by me after 19hrs 8mins to avoid attracting the attention of the sysadmin
+All others: 24 hrs
+
+
+
+2nd Batch: 
+
+baseline run
+====================
+started: 04/22/2020 17:00
+
+Document_Rendering_Engine
+Facilities_Access_Control_System
+FileSys
+FISHYXML
+GPS_Tracker
+GREYMATTER *
+H20FlowInc *
+HackMan
+KTY_Pretty_Printer
+Kaprica_Script_Interpreter
+
+Complete: 04/23/2020 17:00 
+
+Final Run
+=========================
+Started: 04/23/2020 17:05
+
+HackMan killedby admin at 20:12 - 3hr runtime
+Byte sequences from POV file removed from Kaprica_Script_Interpreter.afl_dict
+All runs terminal sessions ended by me, reconnect, fuzzing runs restarted at 20:30
+All sessions concluded normally after 24 hrs
+
+4/25 13:30
+Accel re-run after improving dictionary - added syntax tokens
+
+note - 13:45 - started fuzzing stripped version of LAVA-M who - stripping reduced size from 1.3M to 407k.
+Execution speed seems to be much higher
+

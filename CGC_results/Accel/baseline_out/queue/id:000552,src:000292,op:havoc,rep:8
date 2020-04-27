@@ -1,0 +1,12 @@
+Ang
+A1==SQRT(9)
+A2==EPR A2 ---> =A1+97
+SHOW A2
+A> =A1+97
+SHOCLEAR A3
+REPR A2 --> =A1+97
+SHOW A2
+A1==t> =A1+97
+SHOW A2
+QRT(95==A-> This i-> This is a strnBLE
+EXIT 

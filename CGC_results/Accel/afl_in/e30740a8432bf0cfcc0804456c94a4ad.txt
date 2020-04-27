@@ -1,0 +1,6 @@
+A0=1
+A0=This is a string
+EXIT
+SHOW TABLE
+EXIT
+EXIT

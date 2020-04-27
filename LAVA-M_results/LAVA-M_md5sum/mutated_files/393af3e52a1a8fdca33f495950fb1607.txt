@@ -1,0 +1,2 @@
+b0d66f2703899e99c0cff4a2e87d  /binc046ed351ead6722574d307a  /bin/chown
+0c1b05ab4fe1b56e1088d21058ee77c  /bin/chvt

@@ -1,0 +1,4 @@
+list ..
+crea tx.ttesett
+open FileSys
+

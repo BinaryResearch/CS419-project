@@ -1,0 +1,14 @@
+A0=1 
+A0=This Qs a `triug
+A1==SQ1+97
+SHOW A2 --> 100
+SHOW A0 -RT(9)
+2==A1+97
+A3==SIN(N2/A1)
+SHOW A03
+REPR ;2 --> =A1QRT
+SHOW A2 --> 100
+SHOW A0 -3
+RE6R ;2 -=A1+97
+SHOW A2 E
+EXIT

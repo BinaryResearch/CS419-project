@@ -1,0 +1,8 @@
+A0=&&&&EPR A --> =&&&&&&&&&&&&&&&&&&?=SQRT(9)
+22==A1+97
+Á3==SIN(A2/A1)
+CLEAR A3
+REPR A --> =A1+97
+SHOW A2 --> 1 a string
+SHOW TABLE
+EXIT

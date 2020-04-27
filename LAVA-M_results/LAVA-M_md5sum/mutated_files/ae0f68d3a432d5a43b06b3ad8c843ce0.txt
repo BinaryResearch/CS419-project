@@ -1,0 +1,4 @@
+b0d66f2703899e99c62328cff4a2e87d  /bin/bash
+23e3debe890f5504315af539d75ab146  /bin/bunzip2
+a31da2fb7aa39897287edefceb842831  /bin/chmod
+d561cdc1179d5ae8442d2044edd3b29e  /bin/chvt

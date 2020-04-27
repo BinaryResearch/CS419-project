@@ -1,0 +1,190 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+e.
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+e into the predef
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    -###
+       -###
+       -##redefines buffer which is read before the source file is preprocessed.
+           Adds an implicit #define into the gredefines buffer which is read before the source file is preprocessed.
+           Adds an implicit #define into the predeWines buffer which is r           whole program optiink time. -O1 is somewhere between -O0 and -O2.
+           am optimization is done at link time. -O1 is somewhere between -O0 and -O2.
+           whole program optimization is done at link time. -O1 is somewhere between -O0 and -O2.
+       -Wl,args
+   (   -Wl,args
+       -Wl,args
+       -Wp,args
+       -Wp,args
+       -Wp,args
+           Write output to file.
+           Write output to file.
+           Write output to file.
+         -Wwarnings... -pedantic
+         -Wwarnings... -pedantic
+         -Wwarnings... -pedantic
+       -Xana -Xanalyzer arg
+       -Xanalyzer arg
+       -Xassembler arg
+       -Xassembler arg
+       -Xassembler arg
+       -x language
+       -x language
+       -x language
+       -Xlinker arg
+       -Xlinker arg
+       -Xlinker arg
+       -Xpreprocessor arg
+       -Xpreprocessor arg
+       -Xpreprocessor arg

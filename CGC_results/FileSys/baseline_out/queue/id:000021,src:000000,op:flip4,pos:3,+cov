@@ -1,0 +1,4 @@
+lis ..
+create test.txt
+open FileSys
+

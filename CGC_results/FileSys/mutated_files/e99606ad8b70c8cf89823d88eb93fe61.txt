@@ -1,0 +1,4 @@
+l·Ö†ist Û†ÅÇ..
+cr∑Û†ÄÛ†Å∞§ate test.txt
+open FileSys
+

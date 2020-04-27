@@ -1,0 +1,15 @@
+A0=1<
+A0=This is a string
+A1==SQRT(9)
+A2==:PR A2 --> 7
+SHOW A2
+A1==tQ=A1+97
+SHOCLEAR 97
+SHOW A2
+A1==tQRA3
+REPR A2 --> =A1+97
+SHOW A2
+A1==tQRT(9)
+A2====A-> This is a strng
+SHOW TABLE
+EXIT 

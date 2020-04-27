@@ -1,0 +1,13 @@
+b0d66f2703899e99c62328cff1a2e87d  /bin/bash
+23e3debe890f5504315af539d0ab146  /bin/bunzip2
+36d128c6c5fff1d170141183460469231731687303715884105728dda6a424830fcf2  /d20c624  /bin/bzgrep
+23e3debe890f5504315af539d75ab146  /bin/bzip2
+f46fbaf93f76d7363eaa3  /bin/bzip2recover
+e243255b6cf3b9403df53cb9cd6176e1  /bin/bzless
+e243255b6cf3b9403df53cb9cd6176e1  /bin/bzmore
+d561cdc1178d5ae8442d2044edd3b29e  /bin/cat
+d44ae1b99e9dcd9dab39b3ed35e641b  /bin/chacl
+f2788bd09d45󠀨2726601a222feceb4b49  /bin/chgrp
+a31da2fb7aa39897287edefceb842831  /bin/chmod
+2147483573ef2e42c046ed351ead6722574d307a  /bin/chown
+0c0b05ab4fe9b56e-960d21058ee76c  /bin/chvt

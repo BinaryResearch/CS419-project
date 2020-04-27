@@ -1,0 +1,7 @@
+list .
+create t
+open FileSys .
+create testtes t
+open FilopeeSys .
+create testest6txt
+open File

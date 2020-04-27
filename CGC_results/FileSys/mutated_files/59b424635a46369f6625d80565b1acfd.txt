@@ -1,0 +1,6 @@
+create tset.txt
+list ..
+create tseu.txt
+open FileSys
+Sys
+

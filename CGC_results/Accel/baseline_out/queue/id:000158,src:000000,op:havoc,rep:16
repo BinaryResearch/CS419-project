@@ -1,0 +1,10 @@
+A0=1 
+A09This is a A2/A1)
+¯LEAR A3
+REPRA2 -->=A1+97
+A3==SKN(A1)
+LEAR Aÿ
+REPRA2 --> =A1+97
+SHOW  --> This i a string
+SHOW TGBL a stminE
+EXIT

@@ -1,0 +1,11 @@
+A0
+CLEAR A3
+REPR A2=1 
+A0ÿ€hia i a string
+A1==SQR(ÿ)
+A2==A1LEAR A3
+REPR A2=1 
+A0ÿ€hia 97
+AA2 --> 100
+SHW A0 -->/Th>is is a stringìRHOW TABLE
+EXIT

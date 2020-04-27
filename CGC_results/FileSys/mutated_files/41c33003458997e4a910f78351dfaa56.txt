@@ -1,0 +1,6 @@
+open FileSys
+open FileSys
+list ..
+open FileSys
+cr󠁉eate test.txt
+

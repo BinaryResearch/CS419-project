@@ -1,0 +1,4 @@
+list ..
+create te1æ.txt
+open FileSys
+

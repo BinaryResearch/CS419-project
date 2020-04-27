@@ -1,0 +1,14 @@
+A0=1 
+A0=This is striÿÿ
+A1==ÆA2dA1)
+CLEAR=A1+;7
+A3==SAN(0=1 
+A0=This is `ÿstring
+A1==SA2/A1)
+CLEAR A3
+REPR A2 --> =A1+97
+SHOW A2 --> 1 is û toing
+`ÿstring
+A1==SA2/A1)
+CLE>HOS TABLE
+EXIT

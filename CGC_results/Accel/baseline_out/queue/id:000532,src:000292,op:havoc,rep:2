@@ -1,0 +1,13 @@
+A0=1<
+A0=This is a string
+A1==SQRT(9)
+A2==EPR A2 --> =A1+97A1+97
+SHOW A2
+A1==t
+SHOCLEAR A3
+REPR A2 --> =A1+97
+SHOW A2
+A1==tQRT(9)
+A2====A-> This is a strng
+SHOW TA]LE
+EXIT 

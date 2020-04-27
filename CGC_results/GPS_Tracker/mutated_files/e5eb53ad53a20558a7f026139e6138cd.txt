@@ -1,0 +1,1 @@
+abcdefg1234567890"xcalc&#000;"xcalcNaN+inf%d%p+infNaN

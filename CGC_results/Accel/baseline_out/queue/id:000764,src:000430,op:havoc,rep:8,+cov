@@ -1,0 +1,11 @@
+A0=1 
+A0=This is a `ttiug
+A1==SQRT(9)
+A2==7
+A3==SIN(A2/A1)
+SHOW A03
+REPR ;2 --@ =A1+97
+SHOe A2 --> 10<
+SHOW A0 --> This is a  ring
+SHOWBLa
+EXIT

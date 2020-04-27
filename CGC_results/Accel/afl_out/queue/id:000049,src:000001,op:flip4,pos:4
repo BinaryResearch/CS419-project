@@ -1,0 +1,4 @@
+A0=16A0=This i
+SHOW A0 --> This is a string
+SHOW TABLE
+EXIT

@@ -1,0 +1,134 @@
+Feb 21 23:00
+
+$ ./build/bin/klee --max-memory=10000 --max-memory-inhibit=false --max-time=120min --only-output-states-covering-new --search=random-path --search=nurs:covnew --use-batching-search --libc=uclibc --posix-runtime LAVA-M_bitcode_files/who/who.bc --sym-args 0 2 2 --sym-files 1 8 --sym-stdin 8 --sym-stdout
+
+- 23 test cases generated and saved out of 60 total
+- over 1,000,000 paths explored ---- verify this
+
+lost more than half of test cases due to limit on number of open file descriptors being too low:
+
+KLEE: WARNING: error opening file "/mnt/9b78035a-08d5-49c3-bdd5-5d0377f3b936/KLEE/klee/LAVA-M_bitcode_files/who/klee-out-0/test000060.kquery".  KLEE may have run out of file descriptors: try to increase the maximum number of open file descriptors by using ulimit (Too many open files)
+
+
+
+Feb 22
+
+1) 
+ulimit -n = 50000
+
+$ ./build/bin/klee --optimize --disable-inlining --max-memory=10000 --max-memory-inhibit=false --max-time=120min --only-output-states-covering-new --search=random-path --search=nurs:covnew --use-batching-search --libc=uclibc --posix-runtime LAVA-M_bitcode_files/who/who.bc -sym-args 0 1 10 --sym-args 0 2 2 --sym-files 1 8 --sym-stdin 8 --sym-stdout
+
+
+KLEE: HaltTimer invoked
+KLEE: halting execution, dumping remaining states
+KLEE: WARNING: unable to write output test case, losing it
+KLEE: WARNING: error opening file "/mnt/9b78035a-08d5-49c3-bdd5-5d0377f3b936/KLEE/klee/LAVA-M_bitcode_files/who/klee-out-0/test000055.early".  KLEE may have run out of file descriptors: try to increase the maximum number of open file descriptors by using ulimit (Too many open files).
+KLEE: WARNING: error opening file "/mnt/9b78035a-08d5-49c3-bdd5-5d0377f3b936/KLEE/klee/LAVA-M_bitcode_files/who/klee-out-0/test000055.kquery".  KLEE may have run out of file descriptors: try to increase the maximum number of open file descriptors by using ulimit (Too many open files).
+
+KLEE: done: total instructions = 4952383131
+KLEE: done: completed paths = 624719
+KLEE: done: generated tests = 52
+
+
+2)
+ulimit -n = 90000
+
+$ ./build/bin/klee --max-memory=15000 --max-memory-inhibit=false --max-time=120min --only-output-states-covering-new --search=random-path --search=nurs:covnew --use-batching-search --libc=uclibc --posix-runtime LAVA-M_bitcode_files/who/who.bc --sym-args 0 2 2 --sym-files 1 8 --sym-stdin 8 --sym-stdout
+
+Finished very quickly. Too quickly.
+
+KLEE: done: total instructions = 314850189
+KLEE: done: completed paths = 7120
+KLEE: done: generated tests = 24
+
+
+3)
+$ ./build/bin/klee --max-memory=15000 --max-memory-inhibit=false --max-time=120min --only-output-states-covering-new --search=random-path --search=nurs:covnew --use-batching-search --libc=uclibc --posix-runtime LAVA-M_bitcode_files/who/who.bc --sym-args 0 3 10 --sym-files 1 12 --sym-stdin 8 --sym-stdout
+
+
+KLEE: done: total instructions = 4440665339
+KLEE: done: completed paths = 2494837
+KLEE: done: generated tests = 51
+
+
+4)
+$ ./build/bin/klee --max-memory=15000 --max-memory-inhibit=false --max-time=360min --only-output-states-covering-new --search=random-path --search=nurs:covnew --use-batching-search --libc=uclibc --posix-runtime LAVA-M_bitcode_files/who/who.bc --sym-args 0 3 10 --sym-files 1 12 --sym-stdin 8 --sym-stdout
+
+
+KLEE: HaltTimer invoked
+KLEE: halting execution, dumping remaining states
+
+KLEE: done: total instructions = 4860328555
+KLEE: done: completed paths = 5394616
+KLEE: done: generated tests = 48
+
+
+Feb 28
+
+1)
+
+ ./build/bin/klee --max-memory=15000 --max-memory-inhibit=false --max-time=180min --only-output-states-covering-new --search=random-path --search=nurs:covnew --use-batching-search --libc=uclibc --posix-runtime LAVA-M_bitcode_files/who/who.bc --sym-args 0 1 10 --sym-args 0 2 2 --sym-files 1 50 --sym-stdin 8 --sym-stdout
+
+KLEE: done: total instructions = 5097390018
+KLEE: done: completed paths = 2938784
+KLEE: done: generated tests = 22
+
+2) Forgot to log into user01 in terminal, ran out of open file descriptors
+
+./build/bin/klee --optimize --max-memory=15000 --max-memory-inhibit=false --max-time=360min --only-output-states-covering-new --search=random-path --search=nurs:covnew --use-batching-search --libc=uclibc --posix-runtime LAVA-M_bitcode_files/who/who.bc --sym-args 0 1 10 --sym-args 0 2 2 --sym-files 1 100 --sym-stdin 8 --sym-stdout
+
+
+KLEE: WARNING: unable to write output test case, losing it
+KLEE: WARNING: error opening file "/mnt/9b78035a-08d5-49c3-bdd5-5d0377f3b936/KLEE/klee/LAVA-M_bitcode_files/who/klee-out-5/test000047.early".  KLEE may have run out of file descriptors: try to increase the maximum number of open file descriptors by using ulimit (Too many open files).
+KLEE: WARNING: error opening file "/mnt/9b78035a-08d5-49c3-bdd5-5d0377f3b936/KLEE/klee/LAVA-M_bitcode_files/who/klee-out-5/test000047.kquery".  KLEE may have run out of file descriptors: try to increase the maximum number of open file descriptors by using ulimit (Too many open files).
+
+KLEE: done: total instructions = 6458589098
+KLEE: done: completed paths = 2564134
+KLEE: done: generated tests = 31
+
+
+Feb 29
+
+1) same arguments as above, but this time logged into user01 account
+
+KLEE: WARNING: unable to write output test case, losing it
+
+KLEE: done: total instructions = 3411709879
+KLEE: done: completed paths = 257447
+KLEE: done: generated tests = 43
+
+--------------------------------------------------------------------------
+|  Path   |    Instrs|  Time(s)|  ICov(%)|  BCov(%)|  ICount|  TSolver(%)|
+--------------------------------------------------------------------------
+|klee-last|3411709879|  3357.54|    27.29|    21.28|  110239|       12.67|
+--------------------------------------------------------------------------
+
+
+2) 
+
+./build/bin/klee --optimize --max-memory=15000 --max-memory-inhibit=false --max-time=60min --only-output-states-covering-new --search=random-path --search=nurs:covnew --use-batching-search --libc=uclibc --posix-runtime LAVA-M_bitcode_files/who/who.bc -a --sym-files 1 100 --sym-stdin 8 --sym-stdout
+
+total failure
+
+KLEE: done: total instructions = 213426
+KLEE: done: completed paths = 1
+KLEE: done: generated tests = 1
+
+
+3)
+
+./build/bin/klee --optimize --max-memory=15000 --max-memory-inhibit=false --max-time=60min --only-output-states-covering-new --search=random-path --search=nurs:covnew --use-batching-search --libc=uclibc --posix-runtime LAVA-M_bitcode_files/who/who.bc --sym-args 0 1 10 --sym-args 0 2 2 --sym-files 1 10000 --sym-stdin 8 --sym-stdout
+
+
+KLEE: done: total instructions = 3375215
+KLEE: done: completed paths = 433
+KLEE: done: generated tests = 38
+
+
+------------------------------------------------------------------------
+|  Path   |  Instrs|  Time(s)|  ICov(%)|  BCov(%)|  ICount|  TSolver(%)|
+------------------------------------------------------------------------
+|klee-last| 3375215|  3614.74|    21.61|    17.40|  110239|       51.20|
+------------------------------------------------------------------------
+
+

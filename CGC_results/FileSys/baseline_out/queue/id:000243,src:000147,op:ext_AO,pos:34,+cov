@@ -1,0 +1,6 @@
+list ..
+create ..
+create tsst.txt
+list tsst.txt
+open FileSys
+

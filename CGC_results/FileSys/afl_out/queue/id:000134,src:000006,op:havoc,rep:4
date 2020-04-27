@@ -1,0 +1,7 @@
+lst ..
+create t
+create test.txt@t
+create test.txt
+open Fg|eSys
+
+open Fi|eSys

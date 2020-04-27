@@ -1,0 +1,4 @@
+list ..
+create texsS ip.Ftl
+otenteys
+

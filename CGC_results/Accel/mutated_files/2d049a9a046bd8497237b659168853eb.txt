@@ -1,0 +1,12 @@
+A18446744073709551615=0
+A1==SQRT)9)
+A0=This is a string
+A0=This is a string
+A2==A1+97
+A3==SIN(A2/A1)
+CLEAR A4
+REPR A1 --> = A3+0
+THOW A2 --> 4294967296
+SHOW A0 --> This is a string
+SHOW TABLE
+EXIT

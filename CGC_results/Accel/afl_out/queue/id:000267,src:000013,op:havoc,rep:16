@@ -1,0 +1,13 @@
+A-1=1rrrrrrrrrrrrrrrrrrrrrrr
+A0=Th@s is a string
+A1==SQRT(9)
+A19=SIN(A3/A1)
+CLEAR A2
+RE6R A2 -H> = A0+52431242124195809213869319918
+SHOW -A2 --> Ä00
+kHOW A573 --> This is a )
+A19=SIN(A3/A1)
+CLEAR A2
+GEPstring
+SHOV TABLE
+UXIT

@@ -1,0 +1,10 @@
+A0=1<
+A0=This isg
+A1==SQRT(9)
+A2==E-----------------SHOCLEAR A3
+REPR A2 --> =A1+97
+SHOW A2
+AI==tQRT(9)
+A2====A-> Thisis a strng
+SHOW TABLE
+EXIT 

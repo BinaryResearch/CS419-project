@@ -1,0 +1,6 @@
+A0=--> This is a string
+SHOW TA1
+A0=Thi6s i
+SHOW A0 --> This is a string
+SHOW TABLE
+EXIT

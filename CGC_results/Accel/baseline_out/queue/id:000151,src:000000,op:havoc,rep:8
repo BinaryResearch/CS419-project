@@ -1,0 +1,9 @@
+A0=1 
+A0=This is a string
+A1==SQRA(=A1i97
+AJ==SIN(A2/A1)
+HOW <0 --> This is a string
+SHOW --> 100
+SHOW <0 --> This is a string
+SHOW TABLE
+EXIT

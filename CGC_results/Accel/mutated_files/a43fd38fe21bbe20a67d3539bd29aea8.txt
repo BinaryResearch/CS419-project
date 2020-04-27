@@ -1,0 +1,7 @@
+A0=1
+A0=Tgis ing
+A1==SQRT(9)
+A2==A1+99
+A3==SIN(A2/A1)
+CLE
+EXIT

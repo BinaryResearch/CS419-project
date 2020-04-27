@@ -1,0 +1,4 @@
+b0d66f2703899e99c62328cff4ʶa2e87d  /bin/bash
+23e3debe890f5504315af539d75ab146  /bin/bzcat
+e786fc0d18a8c867ab582b3ed35e641b  /bin/chgrp
+76ef2e42c046ed351ea1058ee76c  /bin/chvt

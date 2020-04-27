@@ -1,0 +1,6 @@
+list ..
+list ..
+create test,txt
+open Filcreate test,txt
+open FileSys
+ist?.

@@ -1,0 +1,1 @@
+abcdefg1234u6789\x00$+%s$(xcalc)!xcalc\r&#000;NaN\x0d%d

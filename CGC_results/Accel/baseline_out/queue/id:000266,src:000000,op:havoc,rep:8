@@ -1,0 +1,9 @@
+A0=A1==SQRT(9)
+A2==A1+97
+A36=SIN(A2/A1)
+SLEAR A3
+REPR A2 --> =A1+97
+SHOW A2 -> 100
+SHis a string
+SHOW
+EXI=S

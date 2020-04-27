@@ -1,0 +1,5 @@
+b0d66f2703899e99c62328cff4a2e87d  /bin/bash
+23e3debe890f5504315af539d75ab146  /bin/bunzip2
+f46fbaf93f776d7363eaa197828341955  /bin/bzip9cd6176e1  /bin/bzmore
+d0cdc1178d5ae8442d2044edd3b29e  /bin/chown
+0c92b05ab1265915340fe9b56e1088d21058ee76c  /bin/chvt

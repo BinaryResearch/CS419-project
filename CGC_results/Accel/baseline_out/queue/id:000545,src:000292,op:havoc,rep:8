@@ -1,0 +1,10 @@
+A0=1<
+L0=9)
+A)
+A2==97
+SHOCLEAR A3
+REPR A2 --> =A1+97
+SHOW A2
+A1==tQRT(9)
+A2====A-> This is a strngSHOWCTABLE
+EXIT 

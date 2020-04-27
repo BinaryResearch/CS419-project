@@ -1,0 +1,6 @@
+lis ..
+open Sys
+list À®.
+ceate ttxt
+open FileSys
+

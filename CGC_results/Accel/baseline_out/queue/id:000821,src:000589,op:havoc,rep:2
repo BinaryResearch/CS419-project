@@ -1,0 +1,10 @@
+A0=1 
+A0=This is | string
+A1\=SQRT(9)
+A2==M1*97
+A3==nR A2 A- =A1+97
+SHOW A2
+-A2 A- =A1+97
+SHOW A2
+-> 100
+ST

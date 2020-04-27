@@ -1,0 +1,9 @@
+A0=1 NNNNNNNNNNNNNNNNNNNNNNNNN
+A0=This is a _tring
+A1=SRA2 -T(9)
+A2==A1+97
+T3=@SIN(""""" """"""A2A2==A1+97
+A3=@SEPR A2 --> ßA1+97
+mHOW A2 --s a ctring
+SHO< TABLE
+EXIT

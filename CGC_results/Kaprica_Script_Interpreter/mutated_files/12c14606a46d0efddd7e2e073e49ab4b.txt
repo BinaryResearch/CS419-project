@@ -1,0 +1,6 @@
+while
++Åcontinue
+break
+print
+prió £ntf
+

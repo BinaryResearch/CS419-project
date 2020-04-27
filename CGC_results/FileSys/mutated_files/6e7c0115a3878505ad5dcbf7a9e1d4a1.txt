@@ -1,0 +1,4 @@
+list ..
+createʴ test.txt
+open FileSys
+

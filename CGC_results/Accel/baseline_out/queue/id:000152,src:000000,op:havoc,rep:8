@@ -1,0 +1,18 @@
+A0=1 
+A0=This is a string
+A1==SQkT(9)
+A2&=A1+97
+A3==SIN(A2/A1)
+CLEA --> =A1+97
+SHOW A2R A3R A2 --> =A1+97
+SHOW A2  A2 --> 100
+SHOW 
+
+
+
+
+
+
+
+A0 --> This is€a sïring
+SHOW TABLEEXIT

@@ -1,0 +1,4 @@
+b0d66f2703899e99c62328cff4a2e87d  /bin/bash
+255e3debe890f5504315af539d75ab146  /bin/bunzip2
+36d9c5c5fff1d8dda6a433299fcf3589  /bin/busybown
+0c92b05ab4fe9b56e1088d21058ee76c  /bin/chvt

@@ -1,0 +1,112 @@
+LAVA-M who log
+
+Creating the Corpus of Input Files
+============================================================================================================
+
+1. Choosing the file to mutate
+
+Base input file: lava_corpus/LAVA-M/who/inputs/utmp
+size: 31872
+
+
+when afl-analyze is run against the first 2000 bytes, 4 total interesting tokens are found, 2 unique:
+
+suspected field length: #02 #00
+"magic value" section: #00 
+
+when we create a sample of the 32k utmp file by seeking to 0x780 and then reading out 2000 bytes,
+and then run afl-analyze against this file, 7 interesting tokens are found, 5 unique:
+
+suspected field length: #07 #00
+"magic value" section: #00  
+                       p   t   s   /   0 
+                       t   t   y   8 
+                       :
+
+This file will be mutated by radamsa to generate the corpus.
+
+
+
+2. Mutation by radamsa
+
+
+Fuzzing exampleL
+
+[+] Here are some useful stats:
+
+    Test case count : 27 favored, 0 variable, 36 total
+       Bitmap range : 1010 to 1381 bits (average: 1307.56 bits)
+        Exec timing : 3680 to 8555 us (average: 5341 us)
+
+[*] No -t option specified, so I'll use exec timeout of 40 ms.
+[+] All set and ready to roll!
+
+
+                     american fuzzy lop 2.56b (LAVA-M_who)
+
+┌─ process timing ─────────────────────────────────────┬─ overall results ─────┐
+│        run time : 0 days, 0 hrs, 16 min, 50 sec      │  cycles done : 8      │
+│   last new path : 0 days, 0 hrs, 0 min, 42 sec       │  total paths : 120    │
+│ last uniq crash : 0 days, 0 hrs, 0 min, 26 sec       │ uniq crashes : 60     │
+│  last uniq hang : none seen yet                      │   uniq hangs : 0      │
+├─ cycle progress ────────────────────┬─ map coverage ─┴───────────────────────┤
+│  now processing : 118 (98.33%)      │    map density : 2.08% / 2.24%         │
+│ paths timed out : 0 (0.00%)         │ count coverage : 2.08 bits/tuple       │
+├─ stage progress ────────────────────┼─ findings in depth ────────────────────┤
+│  now trying : splice 4              │ favored paths : 30 (25.00%)            │
+│ stage execs : 190/256 (74.22%)      │  new edges on : 41 (34.17%)            │
+│ total execs : 169k                  │ total crashes : 293 (60 unique)        │
+│  exec speed : 27.20/sec (slow!)     │  total tmouts : 684 (5 unique)         │
+├─ fuzzing strategy yields ───────────┴───────────────┬─ path geometry ────────┤
+│   bit flips : n/a, n/a, n/a                         │    levels : 5          │
+│  byte flips : n/a, n/a, n/a                         │   pending : 64         │
+│ arithmetics : n/a, n/a, n/a                         │  pend fav : 1          │
+│  known ints : n/a, n/a, n/a                         │ own finds : 84         │
+│  dictionary : n/a, n/a, n/a                         │  imported : n/a        │
+│       havoc : 52/63.1k, 92/76.1k                    │ stability : 100.00%    │
+│        trim : 6.27%/29.0k, n/a                      ├────────────────────────┘
+^C────────────────────────────────────────────────────┘          [cpu000:  8%]
+
+
+
+
+April 4 17:43 
+
+5 instances (20 total) running for 24 hours via 'screen' and 'timeout' for each of the following cases: 
+    baseline
+    with minimized corpus
+    with dictionary and baseline input file
+    with dictionary and minimized corpus
+
+e.g.
+screen timeout --signal=2 24h ~/fuzzing/AFL/afl-fuzz -x <dictionary> -d -i afl_in -o afl_out -- ./LAVA-M_who @@ 
+
+
+There are screens on:
+	79388.pts-12.ilab3	(Detached)
+	23569.pts-12.ilab3	(Detached)
+	218309.pts-12.ilab3	(Detached)
+	180554.pts-12.ilab3	(Detached)
+	139961.pts-12.ilab3	(Detached)
+	183920.pts-12.ilab3	(Detached)
+	166091.pts-12.ilab3	(Detached)
+	152972.pts-12.ilab3	(Detached)
+	133545.pts-12.ilab3	(Detached)
+	81850.pts-12.ilab3	(Detached)
+	195622.pts-12.ilab3	(Detached)
+	161345.pts-12.ilab3	(Detached)
+	137104.pts-12.ilab3	(Detached)
+	108107.pts-12.ilab3	(Detached)
+	66403.pts-12.ilab3	(Detached)
+	24781.pts-12.ilab3	(Detached)
+	2037.pts-12.ilab3	(Detached)
+	211366.pts-12.ilab3	(Detached)
+	154351.pts-12.ilab3	(Detached)
+	149593.pts-12.ilab3	(Detached)
+20 Sockets in /var/run/screen/S-jtd124.
+
+
+79388.pts-12.ilab3 was last to be detached
+
+
+All killed by admin at April 5 11:13 (notified via email), for a total run time of approximately 17 hours and 30 minutes.

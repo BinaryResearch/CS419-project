@@ -1,0 +1,15 @@
+X0=N  A0=This is a `tr'A2==A1ÿ97
+A3==Si
+A3==SIN(A2/A1)
+SHOW A03
+QRT "-N(A2/A1)
+SHOW A03
+QRT "-> =A1+97
+SHOW A2 -->I1)
+SHOW A03
+QRT "-> =A0 --> A2/A1)
+SHOW A03
+QRT "
+SHOW g
+SHOW TABLE
+EXIk

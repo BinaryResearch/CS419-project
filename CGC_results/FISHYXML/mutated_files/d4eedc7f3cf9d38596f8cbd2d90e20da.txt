@@ -1,0 +1,2 @@
+abc%d%#x%nNaN%dNaN$'`xcalc`aaaa%d%n!xcalc\x00%#x%p\u0000\x00!!$+\r\n
+124

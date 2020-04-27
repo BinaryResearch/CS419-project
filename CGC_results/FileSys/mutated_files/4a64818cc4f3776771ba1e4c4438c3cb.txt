@@ -1,0 +1,9 @@
+list ..
+creat ..
+create test.txt
+olist ..
+create test.txt
+ollist ..
+create test®txt
+open FileSys
+

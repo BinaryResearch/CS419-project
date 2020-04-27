@@ -1,0 +1,14 @@
+A0=1 
+A0=Thi        A1+97
+S          s is a `triug
+A1==SA03
+REPR ;2 --> QRT(9)
+A2==A1+97
+A3==SIN(A2,A12,A1)
+SHOW )
+SHOW A03
+REPR ;2 --> =A1+97
+SHOW A2 1)
+SHOW A03
+REPR ;2 --> 
+EXIT

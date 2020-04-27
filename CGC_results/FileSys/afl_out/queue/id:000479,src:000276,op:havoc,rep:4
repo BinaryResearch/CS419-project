@@ -1,0 +1,8 @@
+list M.
+create t
+create test
+.txt
+rmdir t.txt
+rmdir test.
+create tTst.
+Fi|eSys

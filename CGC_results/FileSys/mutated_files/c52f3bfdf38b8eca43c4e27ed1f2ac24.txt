@@ -1,0 +1,5 @@
+list ..
+create tes|.txt
+open Fys
+Si
+el

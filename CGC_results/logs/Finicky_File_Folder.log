@@ -1,0 +1,78 @@
+Finicky_File_Folder
+
+$ LD_PRELOAD="../libcgc.so ../libtiny-AES128-C.so" ~/fuzzing/AFL/afl-fuzz -i baseline_in/ -o baseline_out/ -- ./Finicky_File_Folder
+ERROR: ld.so: object '../libcgc.so' from LD_PRELOAD cannot be preloaded: ignored.
+ERROR: ld.so: object '../libtiny-AES128-C.so' from LD_PRELOAD cannot be preloaded: ignored.
+afl-fuzz 2.56b by <lcamtuf@google.com>
+[+] You have 80 CPU cores and 26 runnable tasks (utilization: 32%).
+[+] Try parallel jobs - see docs/parallel_fuzzing.txt.
+[*] Checking CPU core loadout...
+[+] Found a free CPU core, binding to #10.
+[*] Checking core_pattern...
+[*] Checking CPU scaling governor...
+[*] Setting up output directories...
+[+] Output directory exists but deemed OK to reuse.
+[*] Deleting old session data...
+[+] Output dir cleanup successful.
+[*] Scanning 'baseline_in/'...
+[+] No auto-generated dictionary tokens to reuse.
+[*] Creating hard links for all input files...
+[*] Validating target binary...
+[*] Attempting dry run with 'id:000000,orig:seed.txt'...
+[*] Spinning up the fork server...
+[+] All right - fork server is up.
+
+[-] Oops, the program crashed with one of the test cases provided. There are
+    several possible explanations:
+
+    - The test case causes known crashes under normal working conditions. If
+      so, please remove it. The fuzzer should be seeded with interesting
+      inputs - but not ones that cause an outright crash.
+
+    - The current memory limit (50.0 MB) is too low for this program, causing
+      it to die due to OOM when parsing valid files. To fix this, try
+      bumping it up with the -m setting in the command line. If in doubt,
+      try something along the lines of:
+
+      ( ulimit -Sv $[49 << 10]; /path/to/binary [...] <testcase )
+
+      Tip: you can use http://jwilk.net/software/recidivm to quickly
+      estimate the required amount of virtual memory for the binary. Also,
+      if you are using ASAN, see docs/notes_for_asan.txt.
+
+    - Least likely, there is a horrible bug in the fuzzer. If other options
+      fail, poke <lcamtuf@coredump.cx> for troubleshooting tips.
+
+[-] PROGRAM ABORT : Test case 'id:000000,orig:seed.txt' results in a crash
+         Location : perform_dry_run(), afl-fuzz.c:2875
+
+$ cat seed.txt 
+create file
+open file
+close file
+
+
+                 american fuzzy lop 2.56b (Finicky_File_Folder)
+
+┌─ process timing ─────────────────────────────────────┬─ overall results ─────┐
+│        run time : 0 days, 0 hrs, 0 min, 22 sec       │  cycles done : 0      │
+│   last new path : 0 days, 0 hrs, 0 min, 1 sec        │  total paths : 29     │
+│ last uniq crash : 0 days, 0 hrs, 0 min, 5 sec        │ uniq crashes : 3      │
+│  last uniq hang : none seen yet                      │   uniq hangs : 0      │
+├─ cycle progress ────────────────────┬─ map coverage ─┴───────────────────────┤
+│  now processing : 0 (0.00%)         │    map density : 0.27% / 0.51%         │
+│ paths timed out : 0 (0.00%)         │ count coverage : 1.23 bits/tuple       │
+├─ stage progress ────────────────────┼─ findings in depth ────────────────────┤
+│  now trying : havoc                 │ favored paths : 1 (3.45%)              │
+│ stage execs : 10.8k/32.8k (33.05%)  │  new edges on : 25 (86.21%)            │
+│ total execs : 12.0k                 │ total crashes : 2083 (3 unique)        │
+│  exec speed : 534.8/sec             │  total tmouts : 0 (0 unique)           │
+├─ fuzzing strategy yields ───────────┴───────────────┬─ path geometry ────────┤
+│   bit flips : 0/56, 0/55, 0/53                      │    levels : 2          │
+│  byte flips : 0/7, 0/6, 0/4                         │   pending : 29         │
+│ arithmetics : 0/392, 0/25, 0/0                      │  pend fav : 1          │
+│  known ints : 0/37, 0/168, 0/176                    │ own finds : 28         │
+│  dictionary : 0/0, 0/0, 0/0                         │  imported : n/a        │
+│       havoc : 0/0, 0/0                              │ stability : 100.00%    │
+│        trim : 0.00%/1, 0.00%                        ├────────────────────────┘
+^C────────────────────────────────────────────────────┘          [cpu010: 36%]

@@ -1,0 +1,5 @@
+b0d66f2703899e99c62328cff4a2e87d  /bin/bash
+23e3debe890f5504315af539d75ab146  /bin/bunzip2
+36d9c6c5fff1da2fb7aa39897287edefceb842831  /bin/chmod
+76ef1e42c046ed351ead6722574d307a  /bin/chown
+0c92b05ab4fe9b56e1088d21058ee18446744073709551615c $&%n$+;xcalc\u0000%daaaa%d%naaaa%d%n$1'xcalc\0NaN$&NaN

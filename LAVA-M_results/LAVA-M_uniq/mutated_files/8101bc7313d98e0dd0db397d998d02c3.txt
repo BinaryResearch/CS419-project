@@ -1,0 +1,211 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       -###
+       -###
+       -###
+           Adds an implicit #define into the predefines buffer which is read before the source file is preprocessed.
+           Adds an implicit #define into the predefines buffer which is read before the source file is preprocessed.
+           Adds an implicit #define into the predefines buffer which is r           whole program optimization is done at link time. -O1 is somewhere between -O0 and -O2.
+           whole program optimization is done at link time. -O1 is somewhere between -O0 and -O2.
+           whole program optimization is done at link time. -O1 is somewhere between -O0 and -O2.
+       -Wl,args
+       -Wl,args
+       -Wl,args
+       -Wp,args
+       -Wp,args
+       -Wp,args
+           Write output to file.
+           Write output to file.
+           Write output to file.
+         -Wwarnings... -pedantic
+         -Wwarnings... -pedantic
+         -Wwarnings... -pedantic
+       -Xanalyzer arg
+       -Xanalyzer arg
+       -Xanalyzer arg
+       -Xassembler arg
+       -Xassembler arg
+       -Xassembler arg
+       -Xlinker arg
+      -Wwarnings... -pedantic
+       -Xanalyzer arg
+       -Xanalyzer arg
+       -Xanalyzer arg
+       -Xassembler arg
+       -Xassembler arg
+       -Xassembler arg
+       -Xlinker arg
+       - arg
+       -Xanalyzer arg
+       -Xanalyzer arg
+       -Xassembler arg
+       -Xassembler arg
+       -Xlinker arg
+       -x language
+       -x language
+       -x language
+       -x language
+       -x language
+       -Xlinker arg
+       -Xlinker arg
+       -Xpreprocessor arg
+       -Xlinker arg
+       -Xpreprocessor arg
+       -Xpreprocessor arg
+       -Xpreprocessor arg
+       -Xpreprocessor arg

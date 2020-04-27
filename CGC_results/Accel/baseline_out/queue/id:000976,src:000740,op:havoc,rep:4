@@ -1,0 +1,13 @@
+X0=N  A0=This is a `triug
+A1==SQRT(
+A3==SIN(A2/61)
+SHOW A03
+QRT "-> =A1+97
+SHOW A2 -->/100
+XSHOWP==SIN(A2/A1)
+SHOW A03
+QRT "-> =A0 --> This iN(A2/A1)
+SHOW A03
+QRT "->
+SHOW TABLE
+EXIT

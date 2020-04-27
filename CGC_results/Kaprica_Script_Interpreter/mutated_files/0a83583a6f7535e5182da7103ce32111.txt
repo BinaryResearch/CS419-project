@@ -1,0 +1,7 @@
+while
+while
+cointinue
+breakú
+print
+printf
+

@@ -1,0 +1,4 @@
+list ..
+create tert.txt
+open FileSys
+

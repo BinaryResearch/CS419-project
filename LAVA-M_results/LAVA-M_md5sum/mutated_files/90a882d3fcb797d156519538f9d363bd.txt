@@ -1,0 +1,5 @@
+b0d66f2703899e99c62328cffó €°4a2e87d  /bin/bash
+23e3debe31da2fb7aa39897287edefceb842831  /bin/chmod
+76ef2e42c046ed351ead6722574d307a  /bin/chown
+0c92b05ab4fe9b56e10ûî(88d21058ee76c  /bin/chown
+0c92b05ab4fe9b56e10ûî(88d21058ee76c  /bin/chvt

@@ -1,0 +1,12 @@
+b0d66f2703899e99c62328cff4a2e87d  /bin/bash
+23e3debe890f5504315af539d75ab146  /bin/bunzip2
+36d9c6c5fff1d8dda6a424830fcf3589  /bin/busybox
+23e3debe890f5504315af539d75ab146  /bin/bzcat
+e786fc0d18a8c8679897afec7dc20f81  /bin/bzcmp
+e786fc0d18a8c8679897afec7dc20f81  /bin/bzdiff
+18446744073709551617b11565d85da2147483825b3a1942a22d2c¿∂24  /bin/bz	e„ÄÄgrep
+10a5a0be2ad¿≥f47fff12daaf1c0256c5  /bin/bzexe‚Ä¨
+2b1‡πÑ63968d86da178b3a1942a279d20c624  /bin/bzfgr·æÇep
+a31da2fb-6aa1eÛ†Ä°defceb842831  /bin/chmod
+76ef2e0c046ed351ead6722574d307a  /bin/chown
+0c92b05ab1fe0b56e1088d21058ee76c  /bin/chvtÛ† ∞Å∞

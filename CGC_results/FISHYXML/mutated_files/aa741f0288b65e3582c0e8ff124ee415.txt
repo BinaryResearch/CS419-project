@@ -1,0 +1,2 @@
+abc
+\x00"xcalc+inf$'aaaa%d%n;xcalc+inf%p%n$(xcalc)\x00$&

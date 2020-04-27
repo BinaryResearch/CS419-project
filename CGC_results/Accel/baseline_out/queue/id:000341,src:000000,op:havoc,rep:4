@@ -1,0 +1,13 @@
+A0=1 
+A0=Qhis is a string
+A1==SQRT(9)
+A2==A1+97
+100
+SHOW A0
+SHO+97
+SHOW A2 --> 100
+SHOW A0
+SHOW A2 --> 100
+SHOW A0 -->.This is a string
+SHOW TABLE
+EXIT

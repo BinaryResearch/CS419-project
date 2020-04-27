@@ -1,0 +1,9 @@
+ 0=1
+A0=This° 
+SHOW A0 --This 0=This° 
+SHOW A0 --This  
+SHOW A 
+SHOW A0ring
+SHOW TABLE
+EX/IT
+(

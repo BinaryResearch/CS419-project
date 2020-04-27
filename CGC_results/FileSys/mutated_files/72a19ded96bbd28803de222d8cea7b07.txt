@@ -1,0 +1,7 @@
+
+list ..
+list ..
+create test.txt
+open FileSzs
+list ..
+

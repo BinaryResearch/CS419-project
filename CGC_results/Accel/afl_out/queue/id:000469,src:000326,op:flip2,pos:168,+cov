@@ -1,0 +1,13 @@
+A-1=1
+A0=This is a string
+A1==SQRT(9)
+A19==A1+256
+A3==SIN(A3/A1)
+CLEAR A2SQRT
+REPR A2"--> = A2+2&2243124212419580921-1=1
+A0=This is a string
+A1==OW A563 --> This is 1
+A3=This is a string
+Aa string
+SHOW TBBLE
+EXIT

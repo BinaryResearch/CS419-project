@@ -1,0 +1,6 @@
+list ..
+create tet ..
+create test.txt
+create test.txt
+open FileSys
+

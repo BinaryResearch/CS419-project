@@ -1,0 +1,7 @@
+list M.
+create t
+create test.txt
+open  t
+delete test.txt
+open Fis
+Fi|eSys

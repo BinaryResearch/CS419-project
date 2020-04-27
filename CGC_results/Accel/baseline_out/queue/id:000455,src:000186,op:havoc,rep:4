@@ -1,0 +1,12 @@
+A0=1==SQRT(97
+A2==A1+97
+A3==SIN(A21 
+A0=This"is a sthring
+A1*=SQRT(97
+A2==A1+97
+A3==SIN(A2 a string
+SHOW TA0=1 
+A0&This"This is a string
+SHOW TA0=1 
+A0=This"isLE
+EXIT

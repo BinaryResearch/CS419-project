@@ -1,0 +1,3 @@
+list ..
+open FileS$`!xcalc'xcalc"xcalc$&$PATH"xcalc\r$(xcalc)\0\r\n+infcreate test.txt
+open FileS$`!xcalc'xcalc"xcalc$&$PATH"xcalc\r$(xcalc)\0\r\n+inf

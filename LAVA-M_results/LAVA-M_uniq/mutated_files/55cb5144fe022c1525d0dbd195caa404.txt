@@ -1,0 +1,179 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       -###
+       -###
+       -###
+           Adds an implicit #define into the predefines buffer which is read before the sout to file.
+         -Wwarnings... -pedantic
+         -Wwarnings... -pedantic
+¾         -Wwarnings... -pedantic
+       -Xanalyzer arg
+       -Xanalyzer arg
+       -Xanalyzer arg
+       -Xassembler arg
+       -Xassembler arg
+       -Xassembler arg
+       -x language
+       -x language
+       -x language
+       -Xlinker arg
+       -Xlinker arg
+       -Xlinker arg
+       -Xpreprocessor arg
+       -Xpreprocessor arg
+       -Xpreprocessor arg

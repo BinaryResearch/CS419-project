@@ -1,0 +1,6 @@
+teceate te test.txt
+open FileSlist ..
+.txt
+open FileSyst.txt
+open FileSys
+

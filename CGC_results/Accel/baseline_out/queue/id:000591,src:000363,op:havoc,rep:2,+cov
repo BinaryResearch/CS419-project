@@ -1,0 +1,9 @@
+A0=1 
+A0=Thbs is | string
+A1\=SQRT(9)
+A2==M1(A2/A1)CLEAR A3
+REPR A2 A- =A1+97
+SHOW A2
+-> 100
+SHOW A0 %----
+EXIT

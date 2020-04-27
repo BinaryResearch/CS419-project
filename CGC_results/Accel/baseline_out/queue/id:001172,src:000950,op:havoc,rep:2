@@ -1,0 +1,15 @@
+A0=1 
+A0=This is a `triug
+A1==SQRT(9)
+A2==A1*97
+A3==MIN(A2/A1)
+SHOW A03
+REPR ;2 --> =A1+97
+SHOW A2==MIN(=MIN(A2/A1)
+SHOW A03
+RA2/A1)
+SHOW A03
+ --> 100 SHOW A0 --> This
+SHOW A03
+REPR ;2 --> =A iBLE
+EXIT

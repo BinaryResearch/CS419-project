@@ -1,0 +1,192 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       -###
+       -###
+       -###
+           Adds an implicit #define into the predefines buffer which is read before the source file is preprocessed.
+           Adds an implicit #define into the predefines buffer which is read before the source file is preprocessed.
+           Adds an implicit #define into the predefines buffer which is r  ·†é     Àê    whole program optimization is done at link time. -O1 is somewhere between -O0 and -O2.
+           whole program optimi˛ˇzation is done at link time. -O170141183460469231731687303715884105728 is somewhere between -O-113977 and -O2.
+           whole program optimization is done at link time. -O170141183460469231731687303715884105727 is somewhere between -O1 and -O2.
+       -Wl,args
+       -Wl,args
+       -Wl,args
+       -Wp,args
+       -Wp,args
+       -Wp,args
+           Write output to file.
+           Write output to file.
+           Write output to file.
+         -Wwarnings... -pedantic
+         -Wwarnings... -pedantic
+         -Wwarnings... -pedantic
+       -Xanalyzer arg
+       -Xanalyzer arg
+       -Xanalyzer arg
+       -Xassembler arg
+       -Xassembler arg
+       -Xassembler arg
+       -x language
+       -x language
+       -x language
+       -Xlinker arg
+       -Xlinker arg
+       -Xlinker arg
+      √ü -Xpreprocessor arg
+       -Xpreprocessor arg
+       -Xpreprocessor arg

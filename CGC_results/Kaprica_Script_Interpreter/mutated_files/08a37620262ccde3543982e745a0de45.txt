@@ -1,0 +1,10 @@
+whi¨le
+continue
+
+
+break
+prinue
+bñreak
+print
+printf
+

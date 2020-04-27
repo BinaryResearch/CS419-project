@@ -1,0 +1,15 @@
+A0=1
+A0-This is a s„Ùing
+A1==SQRT(9)
+A2==A1+97
+A3==SIN+LN,A2/A1)
+CLEDR A3
+RPR A3
+REPR A2 --> = A1+97
+SHOW A3
+REPR W A0 --> 2 --> = A1+97
+SHO97
+SHOW A3
+REPR This is a sdring
+SHOW TABLE
+EXIT

@@ -1,0 +1,183 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+í
+
+
+
+
+
+
+
+
+
+é	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+lau-###
+       -###
+       -###
+           Adds an implicie predefines buffer whwch is read before the source file is preprocessed.
+           Adds an implicit #define into 4he predcefines buffer which is read before the source file is prerrocessed.
+lau·       Adds an implicit #define intw thJ predefines buffer which is r           whole program optimizati time. 'O1 is somewhere between -O0 and -O2.
+           whole progr#m optimization is done at link time. -O1 is somewhere between -O0 and -O2.
+           whole program optimizCtion is done at link time.ÿÿÿÿ -O1 is somewhere between -O0 anC -W2.
+       -Wl,args
+       -Wl,args
+       -Wl,args
+   s
+       -Wp,argÿ
+           Write output to file.
+           Write output to file.
+           Write output to file.
+         -Wwarnings...6-pedantic
+         -Wwaonings... -pedantic
+         -Wwarnings... -pedantic
+       -Xa_alyzer arø
+       -Xanalyzer arg
+       @Xanalyzer arg
+       -Xassembler arg
+       -Xassembler arg
+       -Xassembler arg
+      -x language
+       -x language
+       -x language
+    w  -Xlinker argü      -Xlinker arg
+       -Xpreprocessor €rg
+       -XpreprocesXpreprocessor arg

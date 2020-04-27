@@ -1,0 +1,5 @@
+b0d66f2703899e99c62328cff4a2e87d  /bin/bash
+23e3debe146  /bin/bzcat
+e786fc0d18a8c8679897afec7dc20f81  in/bzegrep
+10a5a0be2ad3f0fff12daaf1c0256c5  /bin/bzexe
+2b115ab4fe9b56e1088d21058ee76c  /bin/chvt

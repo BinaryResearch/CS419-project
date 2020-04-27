@@ -1,0 +1,10 @@
+list ..
+create testopen Filist ..
+create test.
+create testleSys
+list ..
+create testte te ..
+create test.txt
+delete test.txt
+open FileSys
+

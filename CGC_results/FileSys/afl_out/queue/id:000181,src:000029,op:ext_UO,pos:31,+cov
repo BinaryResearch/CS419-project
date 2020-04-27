@@ -1,0 +1,5 @@
+list .
+create test.txt
+open ..
+delete test.txt
+oaa%d%n\x0a\0$`%n!!\0\r\n$&%d+inf

@@ -1,0 +1,4 @@
+A0=10 --Á This is a string
+A0=This €ÿSHOW A0 --> This is a string
+SHOW TABLD
+EXIT

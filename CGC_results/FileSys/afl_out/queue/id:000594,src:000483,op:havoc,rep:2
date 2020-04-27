@@ -1,0 +1,9 @@
+list M.
+create t
+create test.•xt
+open  test.•xt
+open  t
+
+open  test.•xt
+open  t
+keletkelete t|eSys

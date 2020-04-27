@@ -1,0 +1,10 @@
+b0b99e9dcd9dab582b3ed35e641b  /bin/chacl
+f2788bd09d452726601a222feceb4b49  /bin/chgrp
+a31da2fb7aa39897287edefceb842831  /bin/chmod
+76ef2e42c046ed351ead6722574d307a  /bin/chmod
+76ef2e42c046ed351ead6722574d307a  /bin/chown
+0c92b05ab4fe9b56e1088dโ44477ee76c  /bin/chvt
+a31da2fb7aa39897287edefceb842831  /bin/chmod
+76ef2e42c046ed351ead6722574d307a  /bin/chmod
+76ef2e42c046ed351ead6722574d307a  /bin/chown
+0c92b05ab4fe9b56e1088dโ44477ee76c  /bin/chvt

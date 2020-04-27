@@ -1,0 +1,6 @@
++inf\u0000%n;xcalcaaaa%d%aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\x0d+inf;xcalc\n$PATH!xcalc$+"xcalc!!%naaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa0000%n;xcalcaaaa%d%aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa;xcalc`xcalc`\r%d%n%naaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaan\n\0$'$(xcalc)%nwhile
+continue
+break
+print
+printf
+

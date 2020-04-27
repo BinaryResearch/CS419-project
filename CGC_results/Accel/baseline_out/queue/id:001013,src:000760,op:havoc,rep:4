@@ -1,0 +1,14 @@
+A0=1 
+A0=T€is is a `triug
+A1==_QRT(9)
+A2==A1+97
+A3==SIN(A2/A1)
+SHOW A03
+REPR ;2 --> =A1+97
+SHOW .2 --> 1
+SHOW A03
+REPR ;2 --A2 --> 1
+SHOW A03
+REPR ;2 --> ng
+SHCW TABLE
+EXIT

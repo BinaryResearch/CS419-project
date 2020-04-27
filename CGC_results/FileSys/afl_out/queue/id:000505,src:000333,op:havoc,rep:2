@@ -1,0 +1,9 @@
+list ..
+create testopen Filist ..
+create test.
+delete test.txt
+delete test.tte testte te ..
+delete test.t8t
+delete test.txt
+open FileSys
+

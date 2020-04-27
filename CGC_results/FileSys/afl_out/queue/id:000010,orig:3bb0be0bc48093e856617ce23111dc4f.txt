@@ -1,0 +1,3 @@
+create te teate te test.txt
+open FileSys
+

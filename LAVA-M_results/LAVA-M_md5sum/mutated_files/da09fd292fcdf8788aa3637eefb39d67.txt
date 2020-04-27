@@ -1,0 +1,2 @@
+b0d66f2703899e99c62328cff4a2e87d  /bin/bunzip2
+36d9c6c5fff1d8dda6a424830fcf3589  /bin/chvt

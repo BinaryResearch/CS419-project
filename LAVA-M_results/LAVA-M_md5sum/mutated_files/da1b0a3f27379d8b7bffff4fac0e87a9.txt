@@ -1,0 +1,2 @@
+b0d66f2703899e99c62328cff4a2e87d  ไ/bin/bash
+23e3debe890f5504315aee76c  /bin/ct

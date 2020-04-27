@@ -1,0 +1,35 @@
+CGC log
+
+1. Accel
+2. BitBlaster
+3. BloomySunday
+4. Board_Game
+5. BudgeIT   # generating input files doesn't work in this case
+6. CGC_Board
+9. CGC_Symbol_Viewer_CSV
+10. CNMP    # corpus generation doesn't appear to work here
+12. CableGrindLlama
+14. Character_Statistics
+
+
+15. Document_Rendering_Engine
+20. GREYMATTER # corpus generation does not appear to work here
+22. Facilities_Access_Control_System        
+
+24. FISHYXML
+25. 
+
+
+
+
+
+X 7. CGC_Image_Parser                     X maybe pick a different one - hangs
+X 8. CGC_Planet_Markup_Language_Parser    X timeout
+X 11. COLLIDEOSCOPE                           X timeout 
+X 13. Casino_Games                            X timeout
+X 16. Eddy                                  X timeout
+X 17. EternalPass                           X too many files
+X 18. FablesReport                          X timeout
+X 19. Filesystem_Command_Shell              X timeout
+X 21. Glue                                  X syntax problem
+X 23. Finicky_File_Folder                   # crashes too much. Use alternative

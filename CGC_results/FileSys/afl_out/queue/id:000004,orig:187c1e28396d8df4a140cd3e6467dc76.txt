@@ -1,0 +1,41 @@
+list ..
+create test.txt
+open Filxt
+open FileSysxt
+list ..
+xt
+open FileSysxt
+open FileSysxt
+open FileSysxt
+open FileSysxt
+open FileSyslist /.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

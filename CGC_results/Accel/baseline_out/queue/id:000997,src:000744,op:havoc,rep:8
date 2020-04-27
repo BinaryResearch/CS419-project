@@ -1,0 +1,13 @@
+A0=1 
+A0=This iQTs a `trSug
+A1==SQRT(9)
+A2==A A2 -97
+A3==SIN(A2/A1)
+SHOW A03
+REPR û+97
+A3==SIN(A2/A1)
+SHOW A03
+REPR ;2 --> =Y1+96óSHOW A2 --> 100
+SHOW A0 --> This is a  ring
+SHOW lABLE
+EXIT

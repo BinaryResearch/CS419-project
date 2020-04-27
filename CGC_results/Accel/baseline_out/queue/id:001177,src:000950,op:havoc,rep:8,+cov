@@ -1,0 +1,12 @@
+A0=1 
+A0=This is a `triug
+A1==SQRT(9)
+A2==11*97
+A3==MIN(A2/A1)
+SHOW A03
+REPR ;2 --> =A1+97
+SHOW A2==MIN(A2/A1)
+SHOW A03
+ --> 10QRTHO*97
+A3==MIญญญญญญญญญญญi(A2W A0 --> T\ds iBLE
+EXIT

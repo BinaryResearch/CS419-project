@@ -1,0 +1,7 @@
+A0=1
+A0=This i
+SHO0=This i
+SHOW A0 --> 1
+A0=This W A0 --> 1
+A0=This i
+SHOW A0 --> This is 

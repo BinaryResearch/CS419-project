@@ -1,0 +1,14 @@
+A0=1 
+A0=This is a `triug
+A1=I_QRT(9)
+A2==A1+97
+A3==SIN(A2/A1)
+SHOW A03
+REPR ;2 --> =A1+97
+SHOW A2 --> 1
+SHOW A03
+REPR ;2 --> =A097
+SHOW A2 --> 1
+SHOW A03
+REPRW TABLE
+EXIT

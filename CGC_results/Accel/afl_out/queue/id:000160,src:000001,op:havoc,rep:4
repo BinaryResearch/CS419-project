@@ -1,0 +1,7 @@
+A0=1
+A0=This i0
+SHOW AA0=1
+A0=This i0
+S-->HOW A0 --> T0 --> This is a string
+SHOW TABE
+EXIT

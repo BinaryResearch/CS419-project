@@ -1,0 +1,12 @@
+b0d66f2703899e99c62328cff4a2e87d  /bin/b/bin/bzcmp
+e786fc0d18a8c8679897afec7dc20f81  /bin/bzdiff
+2b11565d85da178b3a1942a22d20c624  /bin/bzegrep
+10a5a0be2ad3f47fff12daaf1c0256c5  /bin/bzexe
+2b11565d85da178b3a1942a22d20c624  /bin/bzegrep
+10a5a0be2ad3f47fff12daaf1c0256c5  /bin/bzexe
+2b11565d85da178b3a1942a22d20c624  /bin/bzegrep
+10a5a0be2ad3f47fff12daaf1c0256c5  /bin/bzexe
+2b11565d85da178b3a1942a22d20c624  /bin/bzfgrep
+
+2b11565d85da178b3a1942a22d20c6own
+1c92b05ab4294967295fe9b56e1088d21058ee76c  /bin/chvt

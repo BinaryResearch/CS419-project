@@ -1,0 +1,13 @@
+A0=1 string
+A1==SQRT(9)
+A2==A1+97
+A3==SIN8A2/A1)
+CLEAR A2
+REPR A3
+RRring
+SHOW TABLE
+EX,EPR A2 --(A2/A1)
+CLEAR A3
+RERRrOW A0 --> This is a string
+SHOW TABLE
+EXIT

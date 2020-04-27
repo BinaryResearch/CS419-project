@@ -1,0 +1,6 @@
+A0=1
+A0=This  
+SHOW A0 --This  
+SHOW A0ring
+SHOW TABLE
+EX/IT

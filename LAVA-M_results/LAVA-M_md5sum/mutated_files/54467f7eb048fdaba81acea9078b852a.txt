@@ -1,0 +1,2 @@
+b0d66f2703899e99c62328cff0a2e87d  /bin/bash
+0c92b05ab4fe9b56e1088d21058ee0c  /bin/chvt

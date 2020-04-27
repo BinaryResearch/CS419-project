@@ -1,0 +1,1 @@
+AAAAAAAA%p'x\x00$'&#000;%p%s'xcalc\n;xcalc'xcalc%n$PATH$PATH\n`xcalc`%d\r\0&#32767;calc$`%#x\x0d%d%d$(xcalc)\x9223372036854775808;xcalcAAAAAAAA%p'x\x00$'&#000;%p%s'xcalc\n;xcalc'xcalc%n$PATH$PATH\n`xcalc`%d\r\0&#32767;calc$`%#x\x0d%d%d$(xcalc)\x9223372036854775808;xcalc

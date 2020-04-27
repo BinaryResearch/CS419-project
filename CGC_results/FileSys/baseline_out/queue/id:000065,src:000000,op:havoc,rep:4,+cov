@@ -1,0 +1,6 @@
+list .
+create test7txt
+open FileSys
+ .
+create test6txt
+open File

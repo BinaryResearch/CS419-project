@@ -1,0 +1,6 @@
+while
+co\x-19665907923776713055259742856370085d"xcalcntinue
+break
+print
+printf
+

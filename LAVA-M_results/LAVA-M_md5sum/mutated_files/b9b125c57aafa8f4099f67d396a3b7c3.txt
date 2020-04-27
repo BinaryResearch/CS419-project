@@ -1,0 +1,5 @@
+b0d66f2703899e99c62328cff4a2e87d  /bin/bash
+d561cdc1178d5ae8442d2044edd3b29e  /bin/cat
+76ef2e42c046ed351ead6722574d307a  /bin/chown
+d561cdc1178d5ae8442d2044edd3b29e  /bin/cat
+0c92b05ab4fe9b56e1088d21058ee76c  /bin/chvt

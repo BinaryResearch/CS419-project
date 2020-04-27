@@ -1,0 +1,11 @@
+A0=1"
+A0=Thisdis a st1"
+A0=This is a sA2==A1+97
+A3==SIN(A2/A1)
+CL8A?,A3
+REPR A3
+REPR A2 --> = A1+97
+SHOW A2 --> 100
+SHOW A0 --> This is c string
+SHOW TABLE
+EXI(T

@@ -1,0 +1,5 @@
+list ..
+cre`te test.txt
+opere`te test.txt
+open FileSyr
+

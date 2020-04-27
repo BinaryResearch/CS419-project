@@ -1,0 +1,10 @@
+A0=1 
+A0=This is a string
+A1==SQRT(9)
+A2==A1+97
+A3==SI-> =A1+97
+SHOW A2  
+A0=Th
+SHOW A0 --> This is a string
+SHOW TABLE
+EXIT

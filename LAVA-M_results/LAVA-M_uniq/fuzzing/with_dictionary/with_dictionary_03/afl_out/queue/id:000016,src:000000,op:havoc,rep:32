@@ -1,0 +1,180 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-O0 and 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       F###
+       -###
+        buffer which is rad before the source file is preprocessed.
+           Adds an implicit #define into the predefines buffer which is read before the source  ile is preprocessed.
+           Adds an implic                        it %define into the preÉefines buffer which is r           whole prograç optimization is s           tween -O0 and -O2.
+           whole program optimization is done at link time. -O1 is somewhere between -O0 and 
+
+    -###
+       -###
+       --O2.
+       optimization is done at liêk time. -O1 is somewhere betwen -O0 and -O2.
+      †-Wl,args
+       -Wl,args
+       -Wl,args
+       -Wp,aris
+       -Wp,aˇˇˇˇ    w   -Wp,args
+           Write output to file.
+           Write outputzo file.
+           Write output towarnings... -pedantic
+         -Wwarnings... -pedantic
+    Ë   edantic
+       -Xanalyzer arg
+       -Xajalyzer arg
+       -Xanalyzeˇˇˇg
+       -Xassembler arg
+       -Xassembler arg
+       -Xassembler arg
+       -x language
+       -x langage
+       -x language
+       -Xlinkdd arg
+       -Xlinker arg
+       -Xlinker arg
+       -XprMprocessor arg
+       -Xpreprocessor arg
+      -Xpreprocessor arg

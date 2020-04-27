@@ -1,0 +1,4 @@
+list ..
+create tfst.txt
+open FileSys
+

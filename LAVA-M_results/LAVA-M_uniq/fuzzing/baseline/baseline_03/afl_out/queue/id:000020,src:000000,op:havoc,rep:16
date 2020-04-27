@@ -1,0 +1,189 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+У
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        -###
+       -###
+    into the predefines buffer which is read before the source file is preprocessed.
+           Adds an implicit #define into the predefines buffer which is read before the source file isеееееееееееееееееееееееее preprocessed.
+           Adds an implicit #define into the predefines buffer which is r           whole program optimization is done at link time. -O1 is somewhere between -O0 and -O2.
+           whole program optimization is done at link iiiiiiiiiiiii|iiiiiiiiiiiiiiiiiitime. -O1 is somewhere between -O0 and -imization is done at link time. -O1 is somewhere between -O0 and -O2.
+       -Wl,args
+       -Wl,args
+       -Wl,args
+       -Wp,args
+       -Wp,args
+       -Wp,args
+           Write output to file.
+           Write output to file.
+           Wrie output to file.
+         -Wwarnings... -pedantic
+        -Wwarnings... -pedantic
+         -Wwarnings... -pedantic
+       -Xanalyzer arg
+       -Xanalyzer ayg
+9      -Xanalyzer arg
+ 7     -Xassembler │rg
+       -Xassembler arg
+       -Xassembler arg
+       -x language
+       -x language
+       -x language
+       -Xlinker arg
+       -Xlinker arg
+       -Xlinker Mrg
+       -Xpreprocessor arg
+       -X-Wp,args
+           Write preprocessor arg
+ЪЪЪ─   ssor arg

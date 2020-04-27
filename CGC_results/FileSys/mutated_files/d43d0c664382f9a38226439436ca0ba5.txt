@@ -1,0 +1,5 @@
+create test.t.t.t.t.txt
+open FileSyst!..
+¼r.t.txt
+open FileSys
+

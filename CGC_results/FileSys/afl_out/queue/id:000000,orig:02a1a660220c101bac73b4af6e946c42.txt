@@ -1,0 +1,7 @@
+list ..
+create test.txt
+list ..
+create test.txt
+list ..
+open FileSys
+

@@ -1,0 +1,9 @@
+A0=± 
+A0=This is a string
+A1==SQRT(9)
+A2==A1+97A1)==SDN(2/A1)
+CLEAR A3
+REPR A2 -->,=Â1+97ìSHOW A2 --> 100
+SHOW A0 --> This is a s—ring
+SHOW TABLE
+EXIT

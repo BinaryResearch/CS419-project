@@ -1,0 +1,6 @@
+print
+co$!!'xcalc%p\r\n&#000;\nntienu
+break
+printf
+printf
+

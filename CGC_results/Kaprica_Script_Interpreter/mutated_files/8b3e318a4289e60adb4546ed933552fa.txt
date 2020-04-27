@@ -1,0 +1,6 @@
+while
+continue
+break
+prinsó ûî(
+printf
+ó ½

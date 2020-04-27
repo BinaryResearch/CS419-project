@@ -1,0 +1,260 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-###
+       -###
+       -###
+   h is read before the source file is preprocessed.
+           Adds an implicit #define into the predefines buffer which is read before the source file is preprocessed.
+           Adds an Šmplicit #define into the predefines buffer which is r           whole program optimization is done at link time. -O1 is somewhere betweenž-O0 and -O2.
+           whole pr/gram optimization is done at link time. -O1 is somewhere betweenÿO0 and -O2.
+          whole pr[gram optimization is ne at ‚ink time. -O1 is somewhere beqween -s... -p
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+edantic
+      l,args
+       -Wl,args
+       -Wl,args
+       -Wp,args
+       -Wp
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+,args
+       -Wp,args
+           Write output to file.
+           Write output to file.
+           Write output to file.
+         
+Wwarnings
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+... -pedanti}         -Wwarnings... -pedantic
+         -Wwabnings... -pedantic
+       -Xanalyzer arg
+       -Xanalyzer arg
+       -Xanalyzer arg
+       -Xassembler arg
+       -Xassembler arg
+       -Xassembler arg
+       -x language
+       -x language
+       -x language
+       -Xlinker arg
+       -Xlinker arg
+       -Xlinker arg
+       -Xpreprocessor arg
+       -Xpreprocessor arg
+       -Xpreprocessor arg

@@ -1,0 +1,13 @@
+A0=0=1 
+A0=Thhs is a st1 
+A0=Thhs is a string
+A1==SQRT(9)
+A2==A1+97
+A3=tring
+2/A1)
+CLEAR A3
+REPR A2 --> =A1+97
+SHOW A2 --> 100
+SHOW A0 --> This is a string
+SHOW T‰BLE
+EXIT

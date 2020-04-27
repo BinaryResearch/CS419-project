@@ -1,0 +1,5 @@
+list ..
+modify 4create test.txt
+
+modify 4create deletetest.txt
+opopen Fi|eSys

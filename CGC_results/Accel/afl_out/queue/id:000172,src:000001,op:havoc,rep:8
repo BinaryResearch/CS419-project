@@ -1,0 +1,8 @@
+A0=TABLE
+EXIT1
+A0=This N
+SHOWA0 --> This is ^ s1
+A0=This N
+SHOWA0 --> ThWrZng
+SHOW TABLE
+EXIT

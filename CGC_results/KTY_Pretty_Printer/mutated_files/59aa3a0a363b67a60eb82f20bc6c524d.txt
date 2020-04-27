@@ -1,0 +1,6 @@
+1
+2
+3
+asdf
+1\x0d$PATH\r$(xcalc)\x00%sNaN\x00\r\u0000$'&#000;!!%n&#000;$PATH%s\x0a23
+=^.^=

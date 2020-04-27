@@ -1,0 +1,11 @@
+A0=1 
+A0=This is a string
+A1==SQRT(9)
+A2=.............................3
+REPR A2 --> =A1+97
+SHOW A2 --> 100
+SHOW A0CLEAR A3
+REPR A2 --> =A1+97
+SHO - =A1+97
+SHO --> This is a6 BLE
+EXIT

@@ -1,0 +1,6 @@
+lis ..
+open FileSys
+list À®.
+ceate test.txt
+open FileSys
+

@@ -1,0 +1,12 @@
+A0=1 
+A0=This is a `triug
+A1==S11+97
+RTQRT(9)
+A2==A1+97
+A3==SIN(A2,A1)
+SHOW A03
+REPR ;2 ˇˇˇ=A1+97
+QRTSHOW A2 --> 100
+SÅIN(A2,A1)
+SHOW A03
+REPR ;2 XIT

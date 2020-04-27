@@ -1,0 +1,5 @@
+list ..
+create ttxt	open test.txt
+open Fie
+
+syS

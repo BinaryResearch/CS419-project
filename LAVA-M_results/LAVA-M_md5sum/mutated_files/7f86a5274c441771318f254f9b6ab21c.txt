@@ -1,0 +1,3 @@
+b0d66f2703899e99c612ia 7f8fcd82b23/ en/bash
+23e3debe890f32769af539d75ab146  /bin/bunzip2
+0c92b05ab4fe9b56e1089d21058ee76c  /bin/chvt

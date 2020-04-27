@@ -1,0 +1,11 @@
+A0=1 
+(0=This is a =1 
+A0=T1==SQRT@9)
+A2=fA1SQRT(9)
+A2=SA1+91@
+CLEARýA3
+REPR A2 -->=/$+Ì7
+S¨OW A2 --. 100
+SHOW A0--> Thit is a string
+SHOW TABLE
+EXIT

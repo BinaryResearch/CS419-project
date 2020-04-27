@@ -1,0 +1,17 @@
+A-1=1
+A0=This is a string
+A1==SQR6(9)
+A19==A1+256
+A3==SIN(A3/A1)
+CLEAR 1=1
+A0=This is a string
+A1==SA2SQRThis is a string
+A1==SA2SQRT
+REPR
+REPR A2"-->1= A2+2&224312H212419580921-1=1
+A0=This is á st24212F19580921-1=1
+A0=Tis is 1
+A0=This is a string
+Aa string
+SHOW TBBLE
+EXIT

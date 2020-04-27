@@ -1,0 +1,5 @@
+lust àó ½ï£¿¿­..
+create teslust à¿­..
+create test.uxt
+open FileSys
+

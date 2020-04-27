@@ -1,0 +1,6 @@
+76ef2e42c046ed351ead6722574d307a⁦  /bin/chown
+b0d66f2703899e99c62328cff4a2e87d  /bin/bash1a222feceb4b49  /bin/chgrp
+b0d66f2703899e99c62328cff2a2e87d  /bin/bash2a222feceb4b49  /bin/chgrp
+a31da2147483649fb7aa39897287edefceb842831  /bin/chmod
+76ef2e42c046ed351ead6722574d307a⁦  /bin/chown
+0c92b05ab4fe9b56e1088d21058ee76c  /bin/chvt

@@ -1,0 +1,299 @@
+cgc log
+
+build of several binaries fails
+
+1st attempt.
+
+Azurad
+Scanning dependencies of target Azurad_pov_1
+[  4%] Building C object challenges/Azurad/CMakeFiles/Azurad_pov_1.dir/pov_1/pov.c.o
+afl-cc 2.56b by <lcamtuf@google.com>
+cc1: error: argument to ‘-O’ should be a non-negative integer, ‘g’, ‘s’ or ‘fast’
+challenges/Azurad/CMakeFiles/Azurad_pov_1.dir/build.make:62: recipe for target 'challenges/Azurad/CMakeFiles/Azurad_pov_1.dir/pov_1/pov.c.o' failed
+make[2]: *** [challenges/Azurad/CMakeFiles/Azurad_pov_1.dir/pov_1/pov.c.o] Error 1
+CMakeFiles/Makefile2:1952: recipe for target 'challenges/Azurad/CMakeFiles/Azurad_pov_1.dir/all' failed
+make[1]: *** [challenges/Azurad/CMakeFiles/Azurad_pov_1.dir/all] Error 2
+Makefile:83: recipe for target 'all' failed
+make: *** [all] Error 2
+
+
+
+
+Blubber
+[+] Instrumented 2 locations (32-bit, non-hardened mode, ratio 100%).
+[  9%] Building CXX object challenges/Blubber/CMakeFiles/Blubber_1.dir/cb_1/src/server.cc.o
+afl-cc 2.56b by <lcamtuf@google.com>
+/home/user01/fuzzing/cb-multios/challenges/Blubber/cb_1/src/server.cc:51:12: error: declaration of ‘blubber* <unnamed struct>::blubber’ [-fpermissive]
+   blubber* blubber;
+            ^~~~~~~
+In file included from /home/user01/fuzzing/cb-multios/challenges/Blubber/cb_1/src/server.cc:29:0:
+/home/user01/fuzzing/cb-multios/challenges/Blubber/cb_1/src/cgc_blubber.h:38:7: error: changes meaning of ‘blubber’ from ‘class blubber’ [-fpermissive]
+ class blubber
+       ^~~~~~~
+challenges/Blubber/CMakeFiles/Blubber_1.dir/build.make:530: recipe for target 'challenges/Blubber/CMakeFiles/Blubber_1.dir/cb_1/src/server.cc.o' failed
+make[2]: *** [challenges/Blubber/CMakeFiles/Blubber_1.dir/cb_1/src/server.cc.o] Error 1
+CMakeFiles/Makefile2:2868: recipe for target 'challenges/Blubber/CMakeFiles/Blubber_1.dir/all' failed
+make[1]: *** [challenges/Blubber/CMakeFiles/Blubber_1.dir/all] Error 2
+Makefile:83: recipe for target 'all' failed
+make: *** [all] Error 2
+
+
+
+
+CML
+[ 10%] Building C object challenges/CML/CMakeFiles/CML.dir/lib/strtoul.c.o
+afl-cc 2.56b by <lcamtuf@google.com>
+afl-as 2.56b by <lcamtuf@google.com>
+[+] Instrumented 59 locations (32-bit, non-hardened mode, ratio 100%).
+[ 10%] Building CXX object challenges/CML/CMakeFiles/CML.dir/src/attribute.cc.o
+afl-cc 2.56b by <lcamtuf@google.com>
+In file included from /home/user01/fuzzing/cb-multios/challenges/CML/src/cgc_attribute.h:26:0,
+                 from /home/user01/fuzzing/cb-multios/challenges/CML/src/attribute.cc:23:
+/home/user01/fuzzing/cb-multios/challenges/CML/src/cgc_string.h:43:17: error: flexible array member ‘String::d_data’ in an otherwise empty ‘class String’
+     char d_data[];
+                 ^
+challenges/CML/CMakeFiles/CML.dir/build.make:504: recipe for target 'challenges/CML/CMakeFiles/CML.dir/src/attribute.cc.o' failed
+make[2]: *** [challenges/CML/CMakeFiles/CML.dir/src/attribute.cc.o] Error 1
+CMakeFiles/Makefile2:4808: recipe for target 'challenges/CML/CMakeFiles/CML.dir/all' failed
+make[1]: *** [challenges/CML/CMakeFiles/CML.dir/all] Error 2
+Makefile:83: recipe for target 'all' failed
+make: *** [all] Error 2
+
+
+
+
+Carbonate
+Scanning dependencies of target CROMU_00028
+[ 17%] Building C object challenges/Carbonate/CMakeFiles/CROMU_00028.dir/lib/libc.c.o
+afl-cc 2.56b by <lcamtuf@google.com>
+gcc: error: unrecognized command line option ‘-fblocks’
+challenges/Carbonate/CMakeFiles/CROMU_00028.dir/build.make:62: recipe for target 'challenges/Carbonate/CMakeFiles/CROMU_00028.dir/lib/libc.c.o' failed
+make[2]: *** [challenges/Carbonate/CMakeFiles/CROMU_00028.dir/lib/libc.c.o] Error 1
+CMakeFiles/Makefile2:17755: recipe for target 'challenges/Carbonate/CMakeFiles/CROMU_00028.dir/all' failed
+make[1]: *** [challenges/Carbonate/CMakeFiles/CROMU_00028.dir/all] Error 2
+Makefile:83: recipe for target 'all' failed
+make: *** [all] Error 2
+
+
+
+
+
+Charter
+Scanning dependencies of target Charter_patched
+[ 17%] Building C object challenges/Charter/CMakeFiles/Charter_patched.dir/lib/libc.c.o
+afl-cc 2.56b by <lcamtuf@google.com>
+gcc: error: unrecognized command line option ‘-fblocks’
+challenges/Charter/CMakeFiles/Charter_patched.dir/build.make:62: recipe for target 'challenges/Charter/CMakeFiles/Charter_patched.dir/lib/libc.c.o' failed
+make[2]: *** [challenges/Charter/CMakeFiles/Charter_patched.dir/lib/libc.c.o] Error 1
+CMakeFiles/Makefile2:18292: recipe for target 'challenges/Charter/CMakeFiles/Charter_patched.dir/all' failed
+make[1]: *** [challenges/Charter/CMakeFiles/Charter_patched.dir/all] Error 2
+Makefile:83: recipe for target 'all' failed
+make: *** [all] Error 2
+
+
+
+
+
+Corinth
+Scanning dependencies of target CROMU_00073
+[ 18%] Building C object challenges/Corinth/CMakeFiles/CROMU_00073.dir/lib/ctype.c.o
+afl-cc 2.56b by <lcamtuf@google.com>
+gcc: error: unrecognized command line option ‘-fblocks’
+challenges/Corinth/CMakeFiles/CROMU_00073.dir/build.make:62: recipe for target 'challenges/Corinth/CMakeFiles/CROMU_00073.dir/lib/ctype.c.o' failed
+make[2]: *** [challenges/Corinth/CMakeFiles/CROMU_00073.dir/lib/ctype.c.o] Error 1
+CMakeFiles/Makefile2:18604: recipe for target 'challenges/Corinth/CMakeFiles/CROMU_00073.dir/all' failed
+make[1]: *** [challenges/Corinth/CMakeFiles/CROMU_00073.dir/all] Error 2
+Makefile:83: recipe for target 'all' failed
+make: *** [all] Error 2
+
+
+
+
+
+FaceMag
+Scanning dependencies of target FaceMag
+[ 24%] Building C object challenges/FaceMag/CMakeFiles/FaceMag.dir/lib/ctype.c.o
+afl-cc 2.56b by <lcamtuf@google.com>
+afl-as 2.56b by <lcamtuf@google.com>
+[+] Instrumented 13 locations (32-bit, non-hardened mode, ratio 100%).
+[ 24%] Building C object challenges/FaceMag/CMakeFiles/FaceMag.dir/lib/filesystem.c.o
+afl-cc 2.56b by <lcamtuf@google.com>
+afl-as 2.56b by <lcamtuf@google.com>
+[+] Instrumented 853 locations (32-bit, non-hardened mode, ratio 100%).
+[ 24%] Building C object challenges/FaceMag/CMakeFiles/FaceMag.dir/lib/input.c.o
+afl-cc 2.56b by <lcamtuf@google.com>
+/home/user01/fuzzing/cb-multios/challenges/FaceMag/lib/input.c: In function ‘cgc_receive_until’:
+/home/user01/fuzzing/cb-multios/challenges/FaceMag/lib/input.c:71:17: error: storage size of ‘circ_buffer’ isn’t constant
+     static char circ_buffer[maxLen];
+                 ^~~~~~~~~~~
+challenges/FaceMag/CMakeFiles/FaceMag.dir/build.make:88: recipe for target 'challenges/FaceMag/CMakeFiles/FaceMag.dir/lib/input.c.o' failed
+make[2]: *** [challenges/FaceMag/CMakeFiles/FaceMag.dir/lib/input.c.o] Error 1
+CMakeFiles/Makefile2:22460: recipe for target 'challenges/FaceMag/CMakeFiles/FaceMag.dir/all' failed
+make[1]: *** [challenges/FaceMag/CMakeFiles/FaceMag.dir/all] Error 2
+Makefile:83: recipe for target 'all' failed
+make: *** [all] Error 2
+
+
+
+
+
+FailAV
+Scanning dependencies of target FailAV_pov_1
+[ 24%] Building C object challenges/FailAV/CMakeFiles/FailAV_pov_1.dir/pov_1/pov.c.o
+afl-cc 2.56b by <lcamtuf@google.com>
+cc1: error: argument to ‘-O’ should be a non-negative integer, ‘g’, ‘s’ or ‘fast’
+challenges/FailAV/CMakeFiles/FailAV_pov_1.dir/build.make:62: recipe for target 'challenges/FailAV/CMakeFiles/FailAV_pov_1.dir/pov_1/pov.c.o' failed
+make[2]: *** [challenges/FailAV/CMakeFiles/FailAV_pov_1.dir/pov_1/pov.c.o] Error 1
+CMakeFiles/Makefile2:22559: recipe for target 'challenges/FailAV/CMakeFiles/FailAV_pov_1.dir/all' failed
+make[1]: *** [challenges/FailAV/CMakeFiles/FailAV_pov_1.dir/all] Error 2
+Makefile:83: recipe for target 'all' failed
+make: *** [all] Error 2
+
+
+
+
+Mixology
+[ 46%] Building C object challenges/Mixology/CMakeFiles/NRFIN_00007.dir/lib/libmixology.c.o
+afl-cc 2.56b by <lcamtuf@google.com>
+In file included from /home/user01/fuzzing/cb-multios/challenges/Mixology/lib/libmixology.c:25:0:
+/home/user01/fuzzing/cb-multios/challenges/Mixology/lib/cgc_libcompound.h:34:23: error: variably modified ‘chem_formulas’ at file scope
+ static chem_formula_t chem_formulas[N_FORMULAS] = {
+                       ^~~~~~~~~~~~~
+In file included from /home/user01/fuzzing/cb-multios/challenges/Mixology/lib/libmixology.c:26:0:
+/home/user01/fuzzing/cb-multios/challenges/Mixology/lib/cgc_libmixology.h:46:7: error: variably modified ‘compound_name’ at file scope
+  char compound_name[MAX_NEW_CMPND_SZ];
+       ^~~~~~~~~~~~~
+/home/user01/fuzzing/cb-multios/challenges/Mixology/lib/cgc_libmixology.h:65:13: error: variably modified ‘last_compound’ at file scope
+ static char last_compound[MAX_NEW_CMPND_SZ];
+             ^~~~~~~~~~~~~
+/home/user01/fuzzing/cb-multios/challenges/Mixology/lib/cgc_libmixology.h:88:18: error: variably modified ‘commands’ at file scope
+ static command_t commands[NUM_CMDS] = {
+                  ^~~~~~~~
+challenges/Mixology/CMakeFiles/NRFIN_00007.dir/build.make:88: recipe for target 'challenges/Mixology/CMakeFiles/NRFIN_00007.dir/lib/libmixology.c.o' failed
+make[2]: *** [challenges/Mixology/CMakeFiles/NRFIN_00007.dir/lib/libmixology.c.o] Error 1
+CMakeFiles/Makefile2:30399: recipe for target 'challenges/Mixology/CMakeFiles/NRFIN_00007.dir/all' failed
+make[1]: *** [challenges/Mixology/CMakeFiles/NRFIN_00007.dir/all] Error 2
+Makefile:83: recipe for target 'all' failed
+make: *** [all] Error 2
+
+
+
+Query_Calculator
+Scanning dependencies of target Query_Calculator_pov_1
+[ 66%] Building C object challenges/Query_Calculator/CMakeFiles/Query_Calculator_pov_1.dir/pov_1/block.c.o
+afl-cc 2.56b by <lcamtuf@google.com>
+gcc: error: unrecognized command line option ‘-fblocks’
+challenges/Query_Calculator/CMakeFiles/Query_Calculator_pov_1.dir/build.make:62: recipe for target 'challenges/Query_Calculator/CMakeFiles/Query_Calculator_pov_1.dir/pov_1/block.c.o' failed
+make[2]: *** [challenges/Query_Calculator/CMakeFiles/Query_Calculator_pov_1.dir/pov_1/block.c.o] Error 1
+CMakeFiles/Makefile2:39054: recipe for target 'challenges/Query_Calculator/CMakeFiles/Query_Calculator_pov_1.dir/all' failed
+make[1]: *** [challenges/Query_Calculator/CMakeFiles/Query_Calculator_pov_1.dir/all] Error 2
+Makefile:83: recipe for target 'all' failed
+make: *** [all] Error 2
+
+
+
+
+Water_Treatment_Facility_Simulator
+Scanning dependencies of target CROMU_00048
+[ 85%] Building C object challenges/Water_Treatment_Facility_Simulator/CMakeFiles/CROMU_00048.dir/lib/ctype.c.o
+afl-cc 2.56b by <lcamtuf@google.com>
+gcc: error: unrecognized command line option ‘-mstack-alignment=3’; did you mean ‘-fipa-cp-alignment’?
+challenges/Water_Treatment_Facility_Simulator/CMakeFiles/CROMU_00048.dir/build.make:62: recipe for target 'challenges/Water_Treatment_Facility_Simulator/CMakeFiles/CROMU_00048.dir/lib/ctype.c.o' failed
+make[2]: *** [challenges/Water_Treatment_Facility_Simulator/CMakeFiles/CROMU_00048.dir/lib/ctype.c.o] Error 1
+CMakeFiles/Makefile2:49121: recipe for target 'challenges/Water_Treatment_Facility_Simulator/CMakeFiles/CROMU_00048.dir/all' failed
+make[1]: *** [challenges/Water_Treatment_Facility_Simulator/CMakeFiles/CROMU_00048.dir/all] Error 2
+Makefile:83: recipe for target 'all' failed
+make: *** [all] Error 2
+
+
+
+
+university_enrollment
+[ 98%] Building C object challenges/university_enrollment/CMakeFiles/university_enrollment.dir/src/main.c.o
+afl-cc 2.56b by <lcamtuf@google.com>
+/home/user01/fuzzing/cb-multios/challenges/university_enrollment/src/main.c:37:13: error: variably modified ‘line’ at file scope
+ static char line[LINE_SIZE];
+             ^~~~
+challenges/university_enrollment/CMakeFiles/university_enrollment.dir/build.make:413: recipe for target 'challenges/university_enrollment/CMakeFiles/university_enrollment.dir/src/main.c.o' failed
+make[2]: *** [challenges/university_enrollment/CMakeFiles/university_enrollment.dir/src/main.c.o] Error 1
+CMakeFiles/Makefile2:55271: recipe for target 'challenges/university_enrollment/CMakeFiles/university_enrollment.dir/all' failed
+make[1]: *** [challenges/university_enrollment/CMakeFiles/university_enrollment.dir/all] Error 2
+Makefile:83: recipe for target 'all' failed
+make: *** [all] Error 2
+
+
+2nd attempt, since 1st attempt didn't build anything with support for gcov
+
+[  0%] Building C object challenges/3D_Image_Toolkit/CMakeFiles/3D_Image_Toolkit.dir/src/compress.c.o
+afl-cc 2.56b by <lcamtuf@google.com>
+afl-as 2.56b by <lcamtuf@google.com>
+[+] Instrumented 87 locations (32-bit, non-hardened mode, ratio 100%).
+[  0%] Building C object challenges/3D_Image_Toolkit/CMakeFiles/3D_Image_Toolkit.dir/src/main.c.o
+afl-cc 2.56b by <lcamtuf@google.com>
+afl-as 2.56b by <lcamtuf@google.com>
+[+] Instrumented 21 locations (32-bit, non-hardened mode, ratio 100%).
+[  0%] Linking C executable 3D_Image_Toolkit
+afl-cc 2.56b by <lcamtuf@google.com>
+CMakeFiles/3D_Image_Toolkit.dir/lib/ctype.c.o: In function `_GLOBAL__sub_I_00100_0_cgc_isdigit':
+ctype.c:(.text.startup+0x47): undefined reference to `__gcov_init'
+CMakeFiles/3D_Image_Toolkit.dir/lib/ctype.c.o: In function `_GLOBAL__sub_D_00100_1_cgc_isdigit':
+ctype.c:(.text.exit+0x40): undefined reference to `__gcov_exit'
+CMakeFiles/3D_Image_Toolkit.dir/lib/ctype.c.o:(.data.rel+0x10): undefined reference to `__gcov_merge_add'
+CMakeFiles/3D_Image_Toolkit.dir/lib/input.c.o: In function `_GLOBAL__sub_I_00100_0_cgc_receive_bytes':
+input.c:(.text.startup+0x47): undefined reference to `__gcov_init'
+CMakeFiles/3D_Image_Toolkit.dir/lib/input.c.o: In function `_GLOBAL__sub_D_00100_1_cgc_receive_bytes':
+input.c:(.text.exit+0x40): undefined reference to `__gcov_exit'
+CMakeFiles/3D_Image_Toolkit.dir/lib/input.c.o:(.data.rel+0x10): undefined reference to `__gcov_merge_add'
+CMakeFiles/3D_Image_Toolkit.dir/lib/malloc.c.o: In function `_GLOBAL__sub_I_00100_0_lookaside':
+malloc.c:(.text.startup+0x47): undefined reference to `__gcov_init'
+CMakeFiles/3D_Image_Toolkit.dir/lib/malloc.c.o: In function `_GLOBAL__sub_D_00100_1_lookaside':
+malloc.c:(.text.exit+0x40): undefined reference to `__gcov_exit'
+CMakeFiles/3D_Image_Toolkit.dir/lib/malloc.c.o:(.data.rel+0x10): undefined reference to `__gcov_merge_add'
+CMakeFiles/3D_Image_Toolkit.dir/lib/math.c.o: In function `_GLOBAL__sub_I_00100_0_cgc_round':
+math.c:(.text.startup+0x47): undefined reference to `__gcov_init'
+CMakeFiles/3D_Image_Toolkit.dir/lib/math.c.o: In function `_GLOBAL__sub_D_00100_1_cgc_round':
+math.c:(.text.exit+0x40): undefined reference to `__gcov_exit'
+CMakeFiles/3D_Image_Toolkit.dir/lib/math.c.o:(.data.rel+0x10): undefined reference to `__gcov_merge_add'
+CMakeFiles/3D_Image_Toolkit.dir/lib/prng.c.o: In function `_GLOBAL__sub_I_00100_0_cgc_seed_prng_array':
+prng.c:(.text.startup+0x47): undefined reference to `__gcov_init'
+CMakeFiles/3D_Image_Toolkit.dir/lib/prng.c.o: In function `_GLOBAL__sub_D_00100_1_cgc_seed_prng_array':
+prng.c:(.text.exit+0x40): undefined reference to `__gcov_exit'
+CMakeFiles/3D_Image_Toolkit.dir/lib/prng.c.o:(.data.rel+0x10): undefined reference to `__gcov_merge_add'
+CMakeFiles/3D_Image_Toolkit.dir/lib/stdio.c.o: In function `_GLOBAL__sub_I_00100_0_cgc_WRAPPER_PUTC':
+stdio.c:(.text.startup+0x47): undefined reference to `__gcov_init'
+CMakeFiles/3D_Image_Toolkit.dir/lib/stdio.c.o: In function `_GLOBAL__sub_D_00100_1_cgc_WRAPPER_PUTC':
+stdio.c:(.text.exit+0x40): undefined reference to `__gcov_exit'
+CMakeFiles/3D_Image_Toolkit.dir/lib/stdio.c.o:(.data.rel+0x10): undefined reference to `__gcov_merge_add'
+CMakeFiles/3D_Image_Toolkit.dir/lib/stdlib.c.o: In function `_GLOBAL__sub_I_00100_0_cgc_rand':
+stdlib.c:(.text.startup+0x47): undefined reference to `__gcov_init'
+CMakeFiles/3D_Image_Toolkit.dir/lib/stdlib.c.o: In function `_GLOBAL__sub_D_00100_1_cgc_rand':
+stdlib.c:(.text.exit+0x40): undefined reference to `__gcov_exit'
+CMakeFiles/3D_Image_Toolkit.dir/lib/stdlib.c.o:(.data.rel+0x10): undefined reference to `__gcov_merge_add'
+CMakeFiles/3D_Image_Toolkit.dir/lib/string.c.o: In function `_GLOBAL__sub_I_00100_0_cgc_strlen':
+string.c:(.text.startup+0x47): undefined reference to `__gcov_init'
+CMakeFiles/3D_Image_Toolkit.dir/lib/string.c.o: In function `_GLOBAL__sub_D_00100_1_cgc_strlen':
+string.c:(.text.exit+0x40): undefined reference to `__gcov_exit'
+CMakeFiles/3D_Image_Toolkit.dir/lib/string.c.o:(.data.rel+0x10): undefined reference to `__gcov_merge_add'
+CMakeFiles/3D_Image_Toolkit.dir/src/3dc.c.o: In function `_GLOBAL__sub_I_00100_0_cgc_Push':
+3dc.c:(.text.startup+0x47): undefined reference to `__gcov_init'
+CMakeFiles/3D_Image_Toolkit.dir/src/3dc.c.o: In function `_GLOBAL__sub_D_00100_1_cgc_Push':
+3dc.c:(.text.exit+0x40): undefined reference to `__gcov_exit'
+CMakeFiles/3D_Image_Toolkit.dir/src/3dc.c.o:(.data.rel+0x10): undefined reference to `__gcov_merge_add'
+CMakeFiles/3D_Image_Toolkit.dir/src/compress.c.o: In function `_GLOBAL__sub_I_00100_0_red_blue':
+compress.c:(.text.startup+0x47): undefined reference to `__gcov_init'
+CMakeFiles/3D_Image_Toolkit.dir/src/compress.c.o: In function `_GLOBAL__sub_D_00100_1_red_blue':
+compress.c:(.text.exit+0x40): undefined reference to `__gcov_exit'
+CMakeFiles/3D_Image_Toolkit.dir/src/compress.c.o:(.data.rel+0x10): undefined reference to `__gcov_merge_add'
+CMakeFiles/3D_Image_Toolkit.dir/src/main.c.o: In function `_GLOBAL__sub_I_00100_0_cgc_menu':
+main.c:(.text.startup+0xe7): undefined reference to `__gcov_init'
+CMakeFiles/3D_Image_Toolkit.dir/src/main.c.o: In function `_GLOBAL__sub_D_00100_1_cgc_menu':
+main.c:(.text.exit+0x40): undefined reference to `__gcov_exit'
+CMakeFiles/3D_Image_Toolkit.dir/src/main.c.o:(.data.rel+0x10): undefined reference to `__gcov_merge_add'
+collect2: error: ld returned 1 exit status
+challenges/3D_Image_Toolkit/CMakeFiles/3D_Image_Toolkit.dir/build.make:235: recipe for target 'challenges/3D_Image_Toolkit/3D_Image_Toolkit' failed
+make[2]: *** [challenges/3D_Image_Toolkit/3D_Image_Toolkit] Error 1
+CMakeFiles/Makefile2:305: recipe for target 'challenges/3D_Image_Toolkit/CMakeFiles/3D_Image_Toolkit.dir/all' failed
+make[1]: *** [challenges/3D_Image_Toolkit/CMakeFiles/3D_Image_Toolkit.dir/all] Error 2
+Makefile:83: recipe for target 'all' failed
+make: *** [all] Error 2
+

@@ -1,0 +1,97 @@
+LAVA-M md5sum log
+
+Creating the Corpus of Input Files
+============================================================================================================
+
+
+
+
+afl-analyze results on first 915 bytes of bin-ls-md5s:
+
+[+] Analysis complete. Interesting bits: 33.77% of the input file.
+
+
+This file was mutated 20k times, reduced to a corpus of 2.
+
+
+
+
+Fuzzing
+
+~/fuzzing/AFL/afl-fuzz -x LAVA-M_md5sum.afl_dict -d -i afl_in/ -o afl_out/ -- ./LAVA-M_md5sum -c @@
+
+
+[+] Here are some useful stats:
+
+    Test case count : 2 favored, 0 variable, 2 total
+       Bitmap range : 224 to 225 bits (average: 224.50 bits)
+        Exec timing : 1962 to 2047 us (average: 2005 us)
+
+[*] No -t option specified, so I'll use exec timeout of 20 ms.
+[+] All set and ready to roll!
+
+
+
+
+
+                    american fuzzy lop 2.56b (LAVA-M_md5sum)
+
+┌─ process timing ─────────────────────────────────────┬─ overall results ─────┐
+│        run time : 0 days, 0 hrs, 19 min, 10 sec      │  cycles done : 5      │
+│   last new path : 0 days, 0 hrs, 0 min, 11 sec       │  total paths : 281    │
+│ last uniq crash : 0 days, 0 hrs, 0 min, 10 sec       │ uniq crashes : 91     │
+│  last uniq hang : none seen yet                      │   uniq hangs : 0      │
+├─ cycle progress ────────────────────┬─ map coverage ─┴───────────────────────┤
+│  now processing : 264* (93.95%)     │    map density : 0.55% / 0.74%         │
+│ paths timed out : 0 (0.00%)         │ count coverage : 5.41 bits/tuple       │
+├─ stage progress ────────────────────┼─ findings in depth ────────────────────┤
+│  now trying : havoc                 │ favored paths : 36 (12.81%)            │
+│ stage execs : 588/3072 (19.14%)     │  new edges on : 48 (17.08%)            │
+│ total execs : 484k                  │ total crashes : 2445 (91 unique)       │
+│  exec speed : 384.3/sec             │  total tmouts : 6 (6 unique)           │
+├─ fuzzing strategy yields ───────────┴───────────────┬─ path geometry ────────┤
+│   bit flips : n/a, n/a, n/a                         │    levels : 11         │
+│  byte flips : n/a, n/a, n/a                         │   pending : 165        │
+│ arithmetics : n/a, n/a, n/a                         │  pend fav : 0          │
+│  known ints : n/a, n/a, n/a                         │ own finds : 279        │
+│  dictionary : n/a, n/a, n/a                         │  imported : n/a        │
+│       havoc : 161/224k, 209/240k                    │ stability : 100.00%    │
+│        trim : 40.97%/16.0k, n/a                     ├────────────────────────┘
+^C────────────────────────────────────────────────────┘          [cpu000:  5%]
+
+
+
+
+
+started: April 6 14:05
+
+There are screens on:
+	186509.pts-120.ilab3	(Detached)
+	99619.pts-120.ilab3	    (Detached)
+	26218.pts-120.ilab3	    (Detached)
+	180099.pts-120.ilab3	(Detached)
+	108411.pts-120.ilab3	(Detached)
+	117495.pts-120.ilab3	(Detached)
+	52718.pts-120.ilab3	    (Detached)
+	221893.pts-120.ilab3	(Detached)
+	164331.pts-120.ilab3	(Detached)
+	108464.pts-120.ilab3	(Detached)
+	216124.pts-120.ilab3	(Detached)
+	177650.pts-120.ilab3	(Detached)
+	135140.pts-120.ilab3	(Detached)
+	86022.pts-120.ilab3	    (Detached)
+	56834.pts-120.ilab3	    (Detached)
+	129845.pts-120.ilab3	(Detached)
+	110587.pts-120.ilab3	(Detached)
+	93708.pts-120.ilab3	    (Detached)
+	79691.pts-120.ilab3	    (Detached)
+	68777.pts-120.ilab3	    (Detached)
+20 Sockets in /var/run/screen/S-jtd124.
+
+
+Killed by admin April 6 22:12 for a total of approximately 8 hours
+
+Coverage:
+
+gcov must be called on src_md5sum-md5sum.gcno instead of md5sum.c
+ref: https://stackoverflow.com/questions/37978016/cmake-gcov-c-creating-wrong-gcno-files

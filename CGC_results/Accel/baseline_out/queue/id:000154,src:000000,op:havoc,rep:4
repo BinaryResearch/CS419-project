@@ -1,0 +1,9 @@
+A0=1 
+A0=This is a string
+A1==SQRT(9)
+A2==A1+97
+A his is a string
+SHOW TABPR A2 --> =A1+97
+SHOW his is a string
+SHOW TABLE
+EXIT

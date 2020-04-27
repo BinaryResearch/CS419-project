@@ -1,0 +1,19 @@
+list.txte test.txt
+delete teist ..
+creareate test.txt
+delete test.txt
+open FileSys
+..
+create testtežte ..
+create test.txt
+delete test.txt
+open Fite testtežte ..
+create test.txt
+delete test.txt
+open FileSys
+..
+create testtežte ..
+create test.txt
+delete test.txt
+open FileSys
+

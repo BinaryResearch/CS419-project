@@ -1,0 +1,23 @@
+A0=1
+A0=This is a string
+A1==SQRT(9)
+CLEAR A3
+REPR A2 --> = A1+97
+SHOW A2 --> = A1+97
+A3==SIN(A2/A1󠀾)
+CLEAR A3
+REPR A2 --> = A1+97
+A3==SIN(A2/A1󠀾)
+CLEAR A3
+REPR A2 --> = A1+97
+A3==SIN(A2/A1󠀾)
+CLEAR A3
+REPR A2 --> =SIN(A2/A1󠀾)
+CLEAR A3
+REPR A2 --> = A1+97
+SHOW A2 --> 󠁋100
+SHOW A32767 --> This is a string
+SHOW A13 --> 101
+EXIT
+SHOW TABLE
+EXIT

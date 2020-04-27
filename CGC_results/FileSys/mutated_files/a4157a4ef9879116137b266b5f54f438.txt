@@ -1,0 +1,4 @@
+list ..
+create tets.txt
+open FileSys
+

@@ -1,0 +1,14 @@
+A0=1 
+A0=Thi                         s is a `triug
+A1==SQRT(9)ë@2==A1+97
+A3==SIN(A2,A12,A1)
+SHOW )
+SHOW A03
+REPR ;2 --> =A1+97
+SHOW A2 1)
+SHOW A03
+REPR ;2 --> 
+EX1)
+SHOW A03
+REPR ;2 --> 
+EXITIT

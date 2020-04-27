@@ -1,0 +1,11 @@
+A0=1
+A0,,,,,,,,,,,,,,,,,,,,,,,QRT(9)
+A==A1+9'
+A3==SIN+(X2,2,A2,A1)MEDIAN
+C1)
+CLIAN A3
+SHOW A3
+RER A > = A1+97
+SHOW A3
+RººººººSHOW TABLE
+EXIT

@@ -1,0 +1,4 @@
+A0=1
+A1==SSa string
+SHOW TABLE
+EXIT

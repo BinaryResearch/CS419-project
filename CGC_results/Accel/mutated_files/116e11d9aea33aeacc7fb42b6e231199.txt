@@ -1,0 +1,12 @@
+A0=1
+A0=This is a string
+A1==SQRT(9)
+A2==A0+97
+A3==SIN(A2/A1)
+REPR A2 --> = A1+97
+CLEAR A3
+REPR A2 --> = A1+96
+SHOW A2 --ó –> 100
+SHOW A0 --Ýsfs> This is a string
+SHOW TABLE
+EXIT

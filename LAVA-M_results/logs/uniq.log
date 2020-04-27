@@ -1,0 +1,89 @@
+LAVA-M uniq log
+
+Creating the Corpus of Input Files
+============================================================================================================
+
+1. Choosing the file to mutate
+
+Base input file: lava_corpus/LAVA-M/uniq/inputs/man-clang3-sorted
+size: 42426
+
+File is far too large to serve as a base for mutation, so instead a new file was created by seeking to 
+offset 0x80, reading 500 bytes, writing those bytes to a new file and then appending the last 30 lines to
+that file via the 'cat' and 'tail' utility programs e.g.
+
+cat lava_corpus/LAVA-M/uniq/inputs/man-clang3-sorted | tail -30 >> mutation_seed.txt
+
+2. Create dictionary
+3. Mutation by Radamsa to generate corpus
+4. afl-cmin
+5. afl-tmin
+6. Move minimized corpus files from 'mutated_tmin' to 'afl_input' directory
+7. afl-fuzz -x dictionary_file -d -i afl_input -o afl_output -- ./LAVA-M_uniq @@
+
+
+[+] Here are some useful stats:
+
+    Test case count : 3 favored, 0 variable, 12 total
+       Bitmap range : 197 to 214 bits (average: 209.17 bits)
+        Exec timing : 2471 to 4325 us (average: 2959 us)
+
+[*] No -t option specified, so I'll use exec timeout of 20 ms.
+[+] All set and ready to roll!
+
+
+                     american fuzzy lop 2.56b (LAVA-M_uniq)
+
+┌─ process timing ─────────────────────────────────────┬─ overall results ─────┐
+│        run time : 0 days, 0 hrs, 15 min, 33 sec      │  cycles done : 44     │
+│   last new path : 0 days, 0 hrs, 2 min, 21 sec       │  total paths : 64     │
+│ last uniq crash : 0 days, 0 hrs, 6 min, 36 sec       │ uniq crashes : 43     │
+│  last uniq hang : none seen yet                      │   uniq hangs : 0      │
+├─ cycle progress ────────────────────┬─ map coverage ─┴───────────────────────┤
+│  now processing : 55* (85.94%)      │    map density : 0.32% / 0.34%         │
+│ paths timed out : 0 (0.00%)         │ count coverage : 3.30 bits/tuple       │
+├─ stage progress ────────────────────┼─ findings in depth ────────────────────┤
+│  now trying : trim 32/32            │ favored paths : 6 (9.38%)              │
+│ stage execs : 208/809 (25.71%)      │  new edges on : 5 (7.81%)              │
+│ total execs : 377k                  │ total crashes : 1795 (43 unique)       │
+│  exec speed : 266.6/sec             │  total tmouts : 0 (0 unique)           │
+├─ fuzzing strategy yields ───────────┴───────────────┬─ path geometry ────────┤
+│   bit flips : n/a, n/a, n/a                         │    levels : 6          │
+│  byte flips : n/a, n/a, n/a                         │   pending : 4          │
+│ arithmetics : n/a, n/a, n/a                         │  pend fav : 0          │
+│  known ints : n/a, n/a, n/a                         │ own finds : 52         │
+│  dictionary : n/a, n/a, n/a                         │  imported : n/a        │
+│       havoc : 58/147k, 37/200k                      │ stability : 100.00%    │
+│        trim : 16.42%/28.9k, n/a                     ├────────────────────────┘
+^C────────────────────────────────────────────────────┘          [cpu000:  8%]
+
+
+
+
+Start: April 5 14:07
+
+There are screens on:
+	156984.pts-25.ilab3	(Detached)
+	96782.pts-25.ilab3	(Detached)
+	212206.pts-25.ilab3	(Detached)
+	148308.pts-25.ilab3	(Detached)
+	60626.pts-25.ilab3	(Detached)
+	101947.pts-25.ilab3	(Detached)
+	42891.pts-25.ilab3	(Detached)
+	206137.pts-25.ilab3	(Detached)
+	129596.pts-25.ilab3	(Detached)
+	922.pts-25.ilab3	(Detached)
+	9138.pts-25.ilab3	(Detached)
+	198982.pts-25.ilab3	(Detached)
+	165867.pts-25.ilab3	(Detached)
+	96473.pts-25.ilab3	(Detached)
+	59308.pts-25.ilab3	(Detached)
+	39055.pts-25.ilab3	(Detached)
+	13139.pts-25.ilab3	(Detached)
+	217329.pts-25.ilab3	(Detached)
+	192353.pts-25.ilab3	(Detached)
+	184229.pts-25.ilab3	(Detached)
+20 Sockets in /var/run/screen/S-jtd124.
+
+
+Killed by admin April 6 at 3:12 for a total of approximately 13 hours

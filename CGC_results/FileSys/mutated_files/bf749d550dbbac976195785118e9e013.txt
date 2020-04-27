@@ -1,0 +1,4 @@
+list ..
+create best.txt
+open 　FiːleSys
+

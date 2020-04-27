@@ -1,0 +1,17 @@
+A0=1
+A0=This is astring
+A1==SQRT(A09)
+A2==A1+A1
+A3==SIN+MEDIAN(A2,2,A2-A1)
+C1)OWEDEV A3
+SHOW A3
+REPR A2 > = 
+C>)
+CLIAN A3
+SHOW A3
+Riiiiiiiiiiiii
+C1)
+CLIAN A3
+SHOW A3
+REPR A21+97ÿÿÿW A3
+T

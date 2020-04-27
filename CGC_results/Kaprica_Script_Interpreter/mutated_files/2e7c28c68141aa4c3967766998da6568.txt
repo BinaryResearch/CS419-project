@@ -1,0 +1,4 @@
+while\r`xcalc`\0\0!!\x0d\u0000!xcalc$1!!\x00!xcalc\u0000$PATH$(xcalc)%d'xcalc%p
+break
+printf
+

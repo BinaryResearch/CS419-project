@@ -1,0 +1,4 @@
+list ..
+create t
+create test.txt
+open Fi|eSys
