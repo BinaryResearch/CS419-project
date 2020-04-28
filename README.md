@@ -1,3 +1,5 @@
+[Corpus generation via mutation](https://github.com/BinaryResearch/CS419-project/blob/master/corpus_gen_mutation_radamsa_pipeline.png)
+
 # CS419-project
 CS419 Computer Security class project. Improve AFL performance with respect to baseline.
 
