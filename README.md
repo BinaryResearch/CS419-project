@@ -1,31 +1,21 @@
-![Corpus generation via mutation](https://github.com/BinaryResearch/CS419-project/blob/master/corpus_generation_pipeline.png)
+# CS419-project: AFL
 
-# CS419-project
 CS419 Computer Security class project. Improve AFL performance with respect to baseline.
-
-We could choose 1 project from among 4 topics:
- 1) Creating a cryptography platform that allow users/attackers to encrypt and decrypt messages, supports multiple modes, etc.
- 2) Improving AFL performance in some way
- 3) Creating a protected file system with granular per-user permissions/access control
- 4) Adversarial machine learning - creating a platform for attack and defense
-
-Since knowledge of and experience with fuzzing is of great utility and practical value in the context of security research, the fuzzing project was chosen.
-
-# AFL
 
 Project Description (taken from professor's slides):
  - Improve AFL by any means
    - Seed selection, using metrics other than coverage etc.
  - Test on LAVA-M and Google test suite
  - Compare AFL with your improved version
- 
-At minimum:
- - Implementing at least one improvement
- - Tests on LAVA-M and Google Test Suite (AFL and improved version)
- 
-Requirements:
- - You can re-use tools like KLEE (for symbolic execution) etc
- - You cannot re-use existing fuzzers like Driller
- - How to evaluate fuzz testing?
-   - https://www.cs.umd.edu/~mwh/papers/fuzzeval.pdf
- 
+
+# Innovation: Corpus Creation via Seed File Mutation
+
+![Corpus generation via mutation](https://github.com/BinaryResearch/CS419-project/blob/master/corpus_generation_pipeline.png)
+
+>Unfortunately, fuzzing is also relatively shallow; blind, random mutations make it very unlikely to reach certain code paths in the tested code, leaving some vulnerabilities firmly outside the reach of this technique.
+
+>There have been numerous attempts to solve this problem. One of the early approaches - pioneered by Tavis Ormandy - is corpus distillation. The method relies on coverage signals to select a subset of interesting seeds from a massive, high-quality corpus of candidate files, and then fuzz them by traditional means. The approach works exceptionally well, but requires such a corpus to be readily available. <sup>1</sup>
+
+Often, no such corpus is available when fuzz testing a binary. Ready-made test cases may also not be available. Using Radamsa (or any other program that can function as a mutation engine), a single well-chosen initial test case can be used to create a corpus tailored specifically to the program to be fuzzed.
+
+1. https://github.com/google/AFL/blob/master/README.md
