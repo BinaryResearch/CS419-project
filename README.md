@@ -8,7 +8,7 @@ Project Description (taken from professor's slides):
  - Test on LAVA-M and Google test suite
  - Compare AFL with your improved version
 
-# Innovation: Corpus Creation via Seed File Mutation
+# Corpus Creation via Seed File Mutation
 
 ![Corpus generation via mutation](https://github.com/BinaryResearch/CS419-project/blob/master/corpus_generation_pipeline.png)
 
