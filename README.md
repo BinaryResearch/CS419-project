@@ -18,4 +18,8 @@ Project Description (taken from professor's slides):
 
 Often, no such corpus is available when fuzz testing a binary. Ready-made test cases may also not be available. Using Radamsa (or any other program that can function as a mutation engine), a single well-chosen initial test case can be used to create a corpus tailored specifically to the program to be fuzzed. When combined with other techniques, such as using a custom dictionary, this can result in more unique crashing inputs to be discovered by AFL when fuzzing the target.
 
+# Example Results
+
+![CGC Results](https://github.com/BinaryResearch/CS419-project/blob/master/CGC_results.png)
+
 1. https://github.com/google/AFL/blob/master/README.md
