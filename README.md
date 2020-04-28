@@ -22,4 +22,6 @@ Often, no such corpus is available when fuzz testing a binary. Ready-made test c
 
 ![CGC Results](https://github.com/BinaryResearch/CS419-project/blob/master/CGC_results.png)
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/-FLhZoLoSbY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 1. https://github.com/google/AFL/blob/master/README.md
