@@ -16,6 +16,6 @@ Project Description (taken from professor's slides):
 
 >There have been numerous attempts to solve this problem. One of the early approaches - pioneered by Tavis Ormandy - is corpus distillation. The method relies on coverage signals to select a subset of interesting seeds from a massive, high-quality corpus of candidate files, and then fuzz them by traditional means. The approach works exceptionally well, but requires such a corpus to be readily available. <sup>1</sup>
 
-Often, no such corpus is available when fuzz testing a binary. Ready-made test cases may also not be available. Using Radamsa (or any other program that can function as a mutation engine), a single well-chosen initial test case can be used to create a corpus tailored specifically to the program to be fuzzed.
+Often, no such corpus is available when fuzz testing a binary. Ready-made test cases may also not be available. Using Radamsa (or any other program that can function as a mutation engine), a single well-chosen initial test case can be used to create a corpus tailored specifically to the program to be fuzzed. When combined with other techniques, such as using a custom dictionary, this can result in more unique crashing inputs to be discovered by AFL when fuzzing the target.
 
 1. https://github.com/google/AFL/blob/master/README.md
